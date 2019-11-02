@@ -6,5 +6,7 @@ sudo pip3 install virtualenv
 virtualenv venv_flask
 ## activate venv
 source venv_flask/bin/activate
-## to deactivate
+## (C) to deactivate
 deactivate
+## install requeriments 
+ pip install -r requirements.txt
