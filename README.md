@@ -1,3 +1,5 @@
+# En caso se desee crear un entorno virtual (RECOMENDABLE)
+
 ## install python 3
 sudo apt-get install python3-pip
 ## install venv
@@ -9,6 +11,15 @@ source venv_flask/bin/activate
 ## (C) to deactivate
 deactivate
 ## install requeriments 
- pip install -r requirements.txt
+pip install -r requirements.txt
+## run the app
+python app.py
 
- https://itnext.io/a-template-for-creating-a-full-stack-web-application-with-flask-npm-webpack-and-reactjs-be2294b111bd
+# En caso se desee crear un entorno virtual (RECOMENDABLE)
+
+## install python 3
+sudo apt-get install python3-pip
+## install requeriments (Puedes instalar cada dependencia por separado, solo pip install Flask)
+pip install -r requirements.txt
+## run the app
+python app.py

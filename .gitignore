@@ -1,3 +1,9 @@
+# Entorno virtual 
 venv_flask
+
+# Archivos de python
 *.pyc
-node_modules
+
+# Folder view configuration files
+*.DS_Store
+Desktop.ini
