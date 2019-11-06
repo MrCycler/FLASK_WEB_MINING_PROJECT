@@ -19,7 +19,7 @@ python app.py
 
 ## install python 3
 sudo apt-get install python3-pip
-## install requeriments (Puedes instalar cada dependencia por separado, solo pip install Flask)
+## install requeriments (Puedes instalar cada dependencia por separado, solo pip install Flask & pip install gunicorn)
 pip install -r requirements.txt
 ## run the app
 python app.py
