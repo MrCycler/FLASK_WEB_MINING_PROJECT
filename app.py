@@ -4,11 +4,11 @@ app = Flask(__name__,template_folder="./frontend/web_mining_app/build_app", stat
 
 @app.route('/')
 def hello():
-    return "Hello World - REACT BRANCH!"
+    return render_template('index.html')
 
 @app.route('/<name>')
 def hello_name(name):
-    return "Hello {}!".format(name)
+    return "Hola curioso {}!, la curiosidad mato al gato".format(name)
 
 @app.route('/react')
 def index():
