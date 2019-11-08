@@ -7,3 +7,6 @@ venv_flask
 # Folder view configuration files
 *.DS_Store
 *.ini
+
+#react js
+node_modules
