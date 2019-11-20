@@ -60,6 +60,10 @@ El proyecto en frontend esta dentro de la carpeta frontend y se llama web_mining
     |-->assets: (SOLO EDITAR ESTA CARPETA) Subir acá imagenes que se usarán en el desarrollo
 - src: acá esta el código del frontend, acá mencionare solo los archivos que se (DEBEN EDITAR)
     |-->App.js y App.css: Contiene el código Javascript y CSS para la aplicación completa
+    |-->Layouts: Contiene las páginas que son el layout de la aplicación 
+        |-->Navbar: Contiene el código Javascript y CSS del componente Barra de navegación 
+        |-->Footer: Contiene el código Javascript y CSS del componente Footer  
+        |-->Page404: Contiene el código Javascript y CSS de la página de error 
     |-->Page_Categories: Contiene el código Javascript y CSS del informe de noticias según categoría 
     |-->Page_Sources: Contiene el código Javascript y CSS del informe de noticias según fuente 
     |-->Page_Historical: Contiene el código Javascript y CSS del informe historico de noticias 
