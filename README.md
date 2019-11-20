@@ -58,18 +58,18 @@ ARCHIVOS DEL FRONTEND:
 El proyecto en frontend esta dentro de la carpeta frontend y se llama web_mining_app
 - build: contiene los archivos a ser renderizados por el backend, generados en el pase a producción del frontend
 - node_modules: contiene las librerías necesarias para correr la aplicación react js
-- public: contiene las imagenes o archivos estaticos a añadir a la página web
- >   |-->assets: (SOLO EDITAR ESTA CARPETA) Subir acá imagenes que se usarán en el desarrollo
+- public: contiene las imagenes o archivos estaticos a añadir a la página web <br />
+ >   |-->assets: (SOLO EDITAR ESTA CARPETA) Subir acá imagenes que se usarán en el desarrollo <br />
 - src: acá esta el código del frontend, acá mencionare solo los archivos que se (DEBEN EDITAR)
- >   |-->App.js y App.css: Contiene el código Javascript y CSS para la aplicación completa
- >   |-->Layouts: Contiene las páginas que son el layout de la aplicación 
- >       |-->Navbar: Contiene el código Javascript y CSS del componente Barra de navegación 
- >       |-->Footer: Contiene el código Javascript y CSS del componente Footer  
- >       |-->Page404: Contiene el código Javascript y CSS de la página de error 
- >   |-->Page_Categories: Contiene el código Javascript y CSS del informe de noticias según categoría 
- >   |-->Page_Sources: Contiene el código Javascript y CSS del informe de noticias según fuente 
- >   |-->Page_Historical: Contiene el código Javascript y CSS del informe historico de noticias 
- >   |-->Page_Probe: Contiene el código Javascript y CSS de la página donde se prueba el algoritmo
+ >   |-->App.js y App.css: Contiene el código Javascript y CSS para la aplicación completa <br />
+ >   |-->Layouts: Contiene las páginas que son el layout de la aplicación  <br />
+ >       |-->Navbar: Contiene el código Javascript y CSS del componente Barra de navegación <br />
+ >       |-->Footer: Contiene el código Javascript y CSS del componente Footer  <br />
+ >       |-->Page404: Contiene el código Javascript y CSS de la página de error <br />
+ >   |-->Page_Categories: Contiene el código Javascript y CSS del informe de noticias según categoría <br />
+ >   |-->Page_Sources: Contiene el código Javascript y CSS del informe de noticias según fuente <br />
+ >   |-->Page_Historical: Contiene el código Javascript y CSS del informe historico de noticias <br />
+ >   |-->Page_Probe: Contiene el código Javascript y CSS de la página donde se prueba el algoritmo <br />
 - .gitignore : archivo con la configuración para subir solo los archivos principales al github
 - package.json y package-lock.json: contiene el listado de dependencias de la aplicación REACT JS
 - REACTJS_README.md: contiene las indicaciones propias de la aplicación REACT JS
