@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+//Importación de las páginas como componentes
+import PageCat from './Page_Categories/PageCat';
+import PageSrc from './Page_Sources/PageSrc';
+import PageHist from './Page_Historical/PageHist';
+import PageProb from './Page_Probe/PageProb';
+
+//Importación de los layouts
+import Navbar from './Layouts/Navbar/Navbar';
+import Page404 from './Layouts/Page404/Page404';
+import Footers from './Layouts/Footers/Footers';
+
+//Componentes adicionales
 import ReactGA from 'react-ga';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
@@ -24,32 +37,22 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          
-          <h2>WEB MINING APP IN REACT - PROYECTO WEB MINING</h2>
-            <iframe 
-            title="Frame categoria noticias"
-            width="800"
-             height="600" 
-             src="https://app.powerbi.com/view?r=eyJrIjoiOTI3Y2EzOWMtZDZhNS00NmU5LTlhMDktNWRkMjI5ZGNhY2FjIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameborder="0" allowFullScreen="true">
-            </iframe>
-
-            <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-
-            <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      
+      <Router>
+        <div>
+        <Navbar/>
+        <Switch>
+            <Route exact path="/" component={PageSrc}/>  
+            <Route path="/historical" component={PageHist}/>   
+            <Route path="/probe" component={PageProb}/>  
+            <Route path="/sources" component={PageSrc}/>   
+            <Route path="/categories" component={PageCat}/> 
+            <Route  component={Page404}/>   
+        </Switch>
+        <Footers />
+        </div>
+      </Router>
+    
     );
   }
 }

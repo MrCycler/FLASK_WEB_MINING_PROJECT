@@ -1,0 +1,102 @@
+
+.footersup{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size:12px;
+    font-style: normal;
+    color:white;
+    background-color: #004D8F;
+}
+
+.footerinf{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size:12px;
+    font-style: normal;
+    color:white;
+    background-color: #00559e;
+}
+
+.materialicon{
+    color:white;
+    padding-top: 20px;
+    border-color: white;
+    /*
+    border-style: dashed;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    margin-left:10px;
+    margin-right:10px;
+    */
+    }
+
+.marcacss{
+    margin-left: auto;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-right: auto;
+}
+.footertitletext{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footermark{
+    background-color: white;
+    display: block;
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+.footercontainer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 13px;
+}
+
+.footertextcenter{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.footercenter{
+    display: block;
+  margin-left: 50px;
+  margin-right: auto;
+}
+
+.footerinttext{
+    color: white;
+}
+
+.linkinfo{
+    color: white;
+}
+
+.linkinfo:hover,.linkinfo:active,.linkinfo:link,.linkinfo:visited { 
+    color: white;
+}
+
+.verticalalign{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px){
+    .footercenter{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .footermark{
+        margin-left: auto;
+        margin-right:auto;
+        margin-bottom: 10px;
+    }
+  
+}
