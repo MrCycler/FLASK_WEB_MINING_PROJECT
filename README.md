@@ -14,7 +14,9 @@
 <hr />
 
 # CONFORMACIÓN DE CARPETAS DEL PROYECTO
- ├── frontend #
+ 
+ .
+ ├── frontend # S
     |-->web_mining_app
         |-->build
         |-->node_modules
