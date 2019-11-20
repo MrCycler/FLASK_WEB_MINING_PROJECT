@@ -63,9 +63,9 @@ El proyecto en frontend esta dentro de la carpeta frontend y se llama web_mining
 - src: acá esta el código del frontend, acá mencionare solo los archivos que se (DEBEN EDITAR)
     |-->App.js y App.css: Contiene el código Javascript y CSS para la aplicación completa <br />
     |-->Layouts: Contiene las páginas que son el layout de la aplicación  <br />
-        |-->Navbar: Contiene el código Javascript y CSS del componente Barra de navegación <br />
-        |-->Footer: Contiene el código Javascript y CSS del componente Footer  <br />
-        |-->Page404: Contiene el código Javascript y CSS de la página de error <br />
+    &nbsp;|-->Navbar: Contiene el código Javascript y CSS del componente Barra de navegación <br />
+    &nbsp;|-->Footer: Contiene el código Javascript y CSS del componente Footer  <br />
+    &nbsp;|-->Page404: Contiene el código Javascript y CSS de la página de error <br />
     |-->Page_Categories: Contiene el código Javascript y CSS del informe de noticias según categoría <br />
     |-->Page_Sources: Contiene el código Javascript y CSS del informe de noticias según fuente <br />
     |-->Page_Historical: Contiene el código Javascript y CSS del informe historico de noticias <br />
