@@ -120,8 +120,6 @@ El proyecto en frontend esta dentro de la carpeta frontend y se llama web_mining
 ## LLEVAR A PRODUCCIÓN EL FRONTEND (FRONTEND): 
 - ####  una vez que se han hecho todos los cambios en el código de frontend para llevarlo a producción solo tiene que escribir el siguiente comando
 `npm run build`
-- ####  luego eliminar la carpeta build-app
-- ####  renombrar la carpeta build con el nombre build-app
 - ####  hacer commit y push en la rama master
 
 <hr />
