@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import image_404 from './assets/penguin.jpg';
 import './Page404.css';
 //BACKEND: 404 IMAGE SOURCE 
 class Page404 extends Component{
@@ -51,7 +52,7 @@ class Page404 extends Component{
              
                 <img className="page404image"
                 alt=""
-                src="https://2static1.fjcdn.com/comments/Pistol+shrimp+vs+pistol+penguin+fight+_e637ce3a2b649254623485a22f97a73d.jpg" >
+                src={image_404} >
                 </img>
                 <p className="page404text">HTTP 404 Not Found Error</p>
                 <p className="page404text">Lo sentimos, la ruta que quiere consultar no es válida</p>

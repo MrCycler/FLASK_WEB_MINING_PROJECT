@@ -20,8 +20,6 @@
             ├── build   
             ├── node_modules
             ├── public
-                ├── assets
-                └── (otherfiles)
             ├── src
                 ├── Page_Categories
                 ├── Page_Historical
@@ -59,7 +57,6 @@ El proyecto en frontend esta dentro de la carpeta frontend y se llama web_mining
 - build: contiene los archivos a ser renderizados por el backend, generados en el pase a producción del frontend
 - node_modules: contiene las librerías necesarias para correr la aplicación react js
 - public: contiene las imagenes o archivos estaticos a añadir a la página web <br />
-    |-->assets: (SOLO EDITAR ESTA CARPETA) Subir acá imagenes que se usarán en el desarrollo <br />
 - src: acá esta el código del frontend, acá mencionare solo los archivos que se (DEBEN EDITAR)
     |-->App.js y App.css: Contiene el código Javascript y CSS para la aplicación completa <br />
     |-->Layouts: Contiene las páginas que son el layout de la aplicación  <br />
