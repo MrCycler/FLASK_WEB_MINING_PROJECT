@@ -23,8 +23,8 @@
             ├── src
                 ├── Page_Categories
                 ├── Page_Historical
-                ├──Page_Probe
-                ├──Page_Sources
+                ├── Page_Probe
+                ├── Page_Sources
                 ├── App.css
                 ├── App.js
                 ├── App.test.js
@@ -34,9 +34,9 @@
                 ├── serviceWorker.js
                 └── (otherfiles)
             ├── .gitignore
-            ├──package-lock.json
-            ├──package.json
-            └──REACTJS_README.md
+            ├── package-lock.json
+            ├── package.json
+            └── REACTJS_README.md
     ├── venv_flask
     ├── .gitignore
     ├── app.py
@@ -57,7 +57,7 @@ El proyecto en frontend esta dentro de la carpeta frontend y se llama web_mining
 - build: contiene los archivos a ser renderizados por el backend, generados en el pase a producción del frontend
 - node_modules: contiene las librerías necesarias para correr la aplicación react js
 - public: contiene las imagenes o archivos estaticos a añadir a la página web <br />
-- src: acá esta el código del frontend, acá mencionare solo los archivos que se (DEBEN EDITAR)
+- src: acá esta el código del frontend, acá mencionare solo los archivos que se (DEBEN EDITAR)<br />
     |-->App.js y App.css: Contiene el código Javascript y CSS para la aplicación completa <br />
     |-->Layouts: Contiene las páginas que son el layout de la aplicación  <br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-->Navbar: Contiene el código Javascript y CSS del componente Barra de navegación <br />
