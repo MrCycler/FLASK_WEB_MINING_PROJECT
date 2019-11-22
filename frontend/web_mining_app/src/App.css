@@ -2,34 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
 .content {
   padding-top: 70px;
-}
-
-.content .content-title {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.card-wrapper {
-  display: inline-block;
-  background-color: white;
-  box-shadow: 0 0 5px 0 rgba(43,43,43,.1), 0 11px 6px -7px rgba(43,43,43,.1);
-  padding: 20px;
-}
-
-.App-link {
-  color: #09d3ac;
-}
-
-.Page_title{
-  margin-top:20px;
-  margin-bottom: 20px;
 }
 
 .wrapper {
