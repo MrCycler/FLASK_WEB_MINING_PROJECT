@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './assets/css/bootstrap.min.css';
+import './assets/css/waves.min.css';
+import './assets/css/feather.css';
+import './assets/css/font-awesome-n.min.css';
+import './assets/css/chartist.css';
+import './assets/css/style.css';
+import './assets/css/widget.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

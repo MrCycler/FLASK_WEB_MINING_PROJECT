@@ -22,13 +22,13 @@ class Navbar extends Component{
 
     /*Para hacer sticky el navbar */
     handleScroll = () => {
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-        if (window.pageYOffset >= sticky){
-            navbar.classList.add("navbar--sticky");
-        } else {
-            navbar.classList.remove("navbar--sticky");
-        }
+        // var navbar = document.getElementById("navbar");
+        // var sticky = navbar.offsetTop;
+        // if (window.pageYOffset >= sticky){
+        //     navbar.classList.add("navbar--sticky");
+        // } else {
+        //     navbar.classList.remove("navbar--sticky");
+        // }
     }
 
     
@@ -36,18 +36,100 @@ class Navbar extends Component{
     render() {
 
         return (
-            <div id="navbar" className="navbar-area">
-                 <Link to="/">
-                    <img class="navbar__image" 
-                    alt=""
-                    src="https://papercubehome.files.wordpress.com/2019/02/modo-principal.png"/>
-                    </Link>
-                <Link to="/" className="navbar__item">INICIO</Link>
-                <Link to="/sources" className="navbar__item">FUENTES</Link>
-                <Link to="/categories" className="navbar__item">CATEGORIAS</Link>
-                <Link to="/historical" className="navbar__item">HISTORICO</Link>
-                <Link to="/probe" className="navbar__item">PRUEBE EL ALGORITMO</Link>
+            <div>
+                <nav class="navbar header-navbar pcoded-header" header-theme="themelight1">
+                    <div class="navbar-wrapper">
+                        <div class="navbar-logo" logo-theme="theme6">
+                            <a href="index.html">
+                                <img class="img-fluid" src="./assets/images/logo.png" alt="Theme-Logo" />
+                            </a>
+                            <a class="mobile-menu" id="mobile-collapse">
+                                <i class="feather icon-menu icon-toggle-right"></i>
+                            </a>
+                            <a class="mobile-options waves-effect waves-light">
+                                <i class="feather icon-more-horizontal"></i>
+                            </a>
+                        </div>
+                        <div class="navbar-container container-fluid">
+                            <ul class="nav-left">
+                                <li class="header-search">
+                                    <div class="main-search morphsearch-search">
+                                        <div class="input-group">
+                                            <span class="input-group-prepend search-close">
+                                            <i class="feather icon-x input-group-text"></i>
+                                        </span>
+                                            <input type="text" class="form-control" placeholder="Enter Keyword" />
+                                            <span class="input-group-append search-btn">
+                                            <i class="feather icon-search input-group-text"></i>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#!" onclick="if (!window.__cfRLUnblockHandlers) return false; javascript:toggleFullScreen()" class="waves-effect waves-light" data-cf-modified-fc6979d6a8c82d209f7e1fa0-="">
+                                    <i class="full-screen feather icon-maximize"></i>
+                                </a>
+                                </li>
+                            </ul>
+                            <ul class="nav-right">
+                                <li class="header-notification">
+                                    <div class="dropdown-primary dropdown">
+                                        <div class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="feather icon-bell"></i>
+                                            <span class="badge bg-c-red">5</span>
+                                        </div>
+                                        <ul class="show-notification notification-view dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                            <li>
+                                                <h6>Notifications</h6>
+                                                <label class="label label-danger">New</label>
+                                            </li>
+                                            <li>
+                                                <div class="media">
+                                                    <img class="img-radius" src="../files/assets/images/avatar-4.jpg" alt="Generic placeholder image" />
+                                                    <div class="media-body">
+                                                        <h5 class="notification-user">John Doe</h5>
+                                                        <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                        <span class="notification-time">30 minutes ago</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="media">
+                                                    <img class="img-radius" src="../files/assets/images/avatar-3.jpg" alt="Generic placeholder image" />
+                                                    <div class="media-body">
+                                                        <h5 class="notification-user">Joseph William</h5>
+                                                        <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                        <span class="notification-time">30 minutes ago</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="media">
+                                                    <img class="img-radius" src="../files/assets/images/avatar-4.jpg" alt="Generic placeholder image" />
+                                                    <div class="media-body">
+                                                        <h5 class="notification-user">Sara Soudein</h5>
+                                                        <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                        <span class="notification-time">30 minutes ago</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header-notification">
+                                    <div class="dropdown-primary dropdown">
+                                        <div class="displayChatbox dropdown-toggle" data-toggle="dropdown">
+                                            <i class="feather icon-message-square"></i>
+                                            <span class="badge bg-c-green">3</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
+            
         )
     }
 }

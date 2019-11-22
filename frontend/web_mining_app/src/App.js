@@ -8,6 +8,7 @@ import PageProb from './Page_Probe/PageProb';
 
 //Importación de los layouts
 import Navbar from './Layouts/Navbar/Navbar';
+import Sidebar from './Layouts/Sidebar/Sidebar';
 import Page404 from './Layouts/Page404/Page404';
 import Footers from './Layouts/Footers/Footers';
 
@@ -39,17 +40,24 @@ class App extends Component {
     return (
       
       <Router>
-        <div>
-        <Navbar/>
-        <Switch>
-            <Route exact path="/" component={PageSrc}/>  
-            <Route path="/historical" component={PageHist}/>   
-            <Route path="/probe" component={PageProb}/>  
-            <Route path="/sources" component={PageSrc}/>   
-            <Route path="/categories" component={PageCat}/> 
-            <Route  component={Page404}/>   
-        </Switch>
-        <Footers />
+        <div className="wrapper pcoded">
+          <div className="wrapper-header">
+            <Navbar/>
+          </div>
+          <div className="wrapper-sidebar">
+            <Sidebar/>
+          </div>
+          <div className="wrapper-content">
+            <Switch>
+                <Route exact path="/" component={PageSrc}/>  
+                <Route path="/historical" component={PageHist}/>   
+                <Route path="/probe" component={PageProb}/>  
+                <Route path="/sources" component={PageSrc}/>   
+                <Route path="/categories" component={PageCat}/> 
+                <Route  component={Page404}/>   
+            </Switch>
+          </div>
+          {/* <Footers /> */}
         </div>
       </Router>
     
