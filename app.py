@@ -10,16 +10,8 @@ stop_words = f.read()
 nltk_spanish_stop_words = stopwords.words("spanish")
 nltk_english_stop_words = stopwords.words("english")
 total_stop_words = list(nltk_spanish_stop_words + nltk_english_stop_words + stop_words.split())
-app = Flask(__name__,template_folder="./frontend/web_mining_app/build", static_folder="./frontend/web_mining_app/build/static")
+app = Flask(__name__)
 
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
-def hello(path):
-    return render_template('index.html')
-
-@app.route('/curioso')
-def hello_name():
-    return "Hola curioso, la curiosidad mato al gato"
 
 @app.route('/process',methods= ['POST'])
 def process():
@@ -30,9 +22,7 @@ def process():
     json = obtener_json(request.json['url'])
     return jsonify({'data': json }), 201
 
-@app.route('/react')
-def index():
-    return render_template('index.html')
+
 
 def obtener_json(url_noticia):
     
