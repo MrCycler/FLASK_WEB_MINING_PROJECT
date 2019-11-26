@@ -17,11 +17,10 @@ app = Flask(__name__)
 def process():
     # En caso de no enviar URL o hacerlo con errores
     if not request.json or not 'url' in request.json:
-        abort(400)
-    # 
-    #json = obtener_json(request.json['url'])
-    #return jsonify({'data': json }), 201
-    return jsonify({'data': request.json['url'] }), 201
+        abort(400) 
+    json = obtener_json(request.json['url'])
+    return jsonify({'data': json }), 201
+    
 
 
 
