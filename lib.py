@@ -18,8 +18,8 @@ nltk.download('stopwords')
 #------------------------------------------------------------------------------------------
 # Se carga el modelo WV y tamaño del vector caracteristico
 #------------------------------------------------------------------------------------------
-model = gensim.models.Word2Vec.load("wv_models/modelo_300_5.model")
-k_means_c4 = joblib.load('wv_models/km3_c4_300_5.joblib')
+model = gensim.models.Word2Vec.load("./wv_models/modelo_300_5.model")
+k_means_c4 = joblib.load('./wv_models/km3_c4_300_5.joblib')
 
 def getFV(document, model):   
     words=document.split()
