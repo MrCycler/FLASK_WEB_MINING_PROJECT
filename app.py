@@ -19,8 +19,9 @@ def process():
     if not request.json or not 'url' in request.json:
         abort(400)
     # 
-    json = obtener_json(request.json['url'])
-    return jsonify({'data': json }), 201
+    #json = obtener_json(request.json['url'])
+    #return jsonify({'data': json }), 201
+    return jsonify({'data': request.json['url'] }), 201
 
 
 
