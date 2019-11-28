@@ -23,6 +23,12 @@
     
 }
 
+.sidebar-main-title{
+    font-weight: bold;
+    text-align: center;
+    font-family: "Quicksand",sans-serif;
+}
+
 .sidebar-body a:hover {
     color: white;
 }

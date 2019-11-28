@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import Logo from '../../assets/images/logopucp.jpg';
 import './Navbar.css';
 
 
@@ -37,90 +38,89 @@ class Navbar extends Component{
 
         return (
             <div>
-                <nav class="navbar header-navbar pcoded-header" header-theme="themelight1">
-                    <div class="navbar-wrapper">
-                        <div class="navbar-logo" logo-theme="theme6">
+                <nav className="navbar header-navbar pcoded-header" header-theme="themelight1">
+                    <div className="navbar-wrapper">
+                        <div className="navbar-logo" logo-theme="theme6">
                             <a href="index.html">
-                                <img class="img-fluid" src="./assets/images/logo.png" alt="Theme-Logo" />
+                                <img className="img-navbar" src={Logo} alt="Theme-Logo" />
                             </a>
-                            <a class="mobile-menu" id="mobile-collapse">
-                                <i class="feather icon-menu icon-toggle-right"></i>
+                            <a className="mobile-menu" id="mobile-collapse">
+                                <i className="feather icon-menu icon-toggle-right"></i>
                             </a>
-                            <a class="mobile-options waves-effect waves-light">
-                                <i class="feather icon-more-horizontal"></i>
+                            <a className="mobile-options waves-effect waves-light">
+                                <i className="feather icon-more-horizontal"></i>
                             </a>
                         </div>
-                        <div class="navbar-container container-fluid">
-                            <ul class="nav-left">
-                                <li class="header-search">
-                                    <div class="main-search morphsearch-search">
-                                        <div class="input-group">
-                                            <span class="input-group-prepend search-close">
-                                            <i class="feather icon-x input-group-text"></i>
+                        <div className="navbar-container container-fluid">
+                            <ul className="nav-left">
+                                <li className="header-search">
+                                    <div className="main-search morphsearch-search">
+                                        <div className="input-group">
+                                            <span className="input-group-prepend search-close">
+                                            <i className="feather icon-x input-group-text"></i>
                                         </span>
-                                            <input type="text" class="form-control" placeholder="Enter Keyword" />
-                                            <span class="input-group-append search-btn">
-                                            <i class="feather icon-search input-group-text"></i>
+                                            <input type="text" className="form-control" placeholder="Enter Keyword" />
+                                            <span className="input-group-append search-btn">
+                                            <i className="feather icon-search input-group-text"></i>
                                         </span>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="#!" onclick="if (!window.__cfRLUnblockHandlers) return false; javascript:toggleFullScreen()" class="waves-effect waves-light" data-cf-modified-fc6979d6a8c82d209f7e1fa0-="">
-                                    <i class="full-screen feather icon-maximize"></i>
-                                </a>
+                                    <i className="full-screen feather icon-maximize"></i>
+                                
                                 </li>
                             </ul>
-                            <ul class="nav-right">
-                                <li class="header-notification">
-                                    <div class="dropdown-primary dropdown">
-                                        <div class="dropdown-toggle" data-toggle="dropdown">
-                                            <i class="feather icon-bell"></i>
-                                            <span class="badge bg-c-red">5</span>
+                            <ul className="nav-right">
+                                <li className="header-notification">
+                                    <div className="dropdown-primary dropdown">
+                                        <div className="dropdown-toggle" data-toggle="dropdown">
+                                            <i className="feather icon-bell"></i>
+                                            <span className="badge bg-c-red">5</span>
                                         </div>
-                                        <ul class="show-notification notification-view dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                        <ul className="show-notification notification-view dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                                             <li>
                                                 <h6>Notifications</h6>
-                                                <label class="label label-danger">New</label>
+                                                <label className="label label-danger">New</label>
                                             </li>
                                             <li>
-                                                <div class="media">
-                                                    <img class="img-radius" src="../files/assets/images/avatar-4.jpg" alt="Generic placeholder image" />
-                                                    <div class="media-body">
-                                                        <h5 class="notification-user">John Doe</h5>
-                                                        <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                        <span class="notification-time">30 minutes ago</span>
+                                                <div className="media">
+                                                    <img className="img-radius" src="../files/assets/images/avatar-4.jpg" alt="Generic placeholder image" />
+                                                    <div className="media-body">
+                                                        <h5 className="notification-user">John Doe</h5>
+                                                        <p className="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                        <span className="notification-time">30 minutes ago</span>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="media">
-                                                    <img class="img-radius" src="../files/assets/images/avatar-3.jpg" alt="Generic placeholder image" />
-                                                    <div class="media-body">
-                                                        <h5 class="notification-user">Joseph William</h5>
-                                                        <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                        <span class="notification-time">30 minutes ago</span>
+                                                <div className="media">
+                                                    <img className="img-radius" src="../files/assets/images/avatar-3.jpg" alt="Generic placeholder image" />
+                                                    <div className="media-body">
+                                                        <h5 className="notification-user">Joseph William</h5>
+                                                        <p className="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                        <span className="notification-time">30 minutes ago</span>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class="media">
-                                                    <img class="img-radius" src="../files/assets/images/avatar-4.jpg" alt="Generic placeholder image" />
-                                                    <div class="media-body">
-                                                        <h5 class="notification-user">Sara Soudein</h5>
-                                                        <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                        <span class="notification-time">30 minutes ago</span>
+                                                <div className="media">
+                                                    <img className="img-radius" src="../files/assets/images/avatar-4.jpg" alt="Generic placeholder image" />
+                                                    <div className="media-body">
+                                                        <h5 className="notification-user">Sara Soudein</h5>
+                                                        <p className="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                        <span className="notification-time">30 minutes ago</span>
                                                     </div>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li class="header-notification">
-                                    <div class="dropdown-primary dropdown">
-                                        <div class="displayChatbox dropdown-toggle" data-toggle="dropdown">
-                                            <i class="feather icon-message-square"></i>
-                                            <span class="badge bg-c-green">3</span>
+                                <li className="header-notification">
+                                    <div className="dropdown-primary dropdown">
+                                        <div className="displayChatbox dropdown-toggle" data-toggle="dropdown">
+                                            <i className="feather icon-message-square"></i>
+                                            <span className="badge bg-c-green">3</span>
                                         </div>
                                     </div>
                                 </li>

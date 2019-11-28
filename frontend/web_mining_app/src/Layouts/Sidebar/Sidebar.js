@@ -15,39 +15,39 @@ class Sidebar extends Component{
 
         return (
             <div className="sidebar">
-                <nav class="pcoded-navbar">
-                        <div class="nav-list">
-                            <div class="pcoded-inner-navbar main-menu">
-                                <div class="pcoded-navigation-label">Navigation</div>
-                                <ul class="pcoded-item pcoded-left-item">
-                                    <li class="pcoded-hasmenu">
-                                        <a href="/" class="waves-effect waves-dark">
-            								<span class="pcoded-micon"><i class="feather icon-home"></i></span>
-                                            <span class="pcoded-mtext">Dashboard</span>
+                <nav className="pcoded-navbar">
+                        <div className="nav-list">
+                            <div className="pcoded-inner-navbar main-menu">
+                                <div className="pcoded-navigation-label"><p className="sidebar-main-title">NEWS ANALYSIS APP</p></div>
+                                <ul className="pcoded-item pcoded-left-item">
+                                    <li className="pcoded-hasmenu">
+                                        <a href="/" className="waves-effect waves-dark">
+            								<span className="pcoded-micon"><i className="feather icon-home"></i></span>
+                                            <span className="pcoded-mtext">Dashboard</span>
                                         </a>
                                     </li>
-                                    <li class="pcoded-hasmenu">
-                                        <a href="/source" class="waves-effect waves-dark">
-            								<span class="pcoded-micon"><i class="feather icon-home"></i></span>
-                                            <span class="pcoded-mtext">Fuentes</span>
+                                    <li className="pcoded-hasmenu">
+                                        <a href="/sources" className="waves-effect waves-dark">
+            								<span className="pcoded-micon"><i className="feather icon-home"></i></span>
+                                            <span className="pcoded-mtext">Fuentes</span>
                                         </a>
                                     </li>
-                                    <li class="pcoded-hasmenu">
-                                        <a href="/categories" class="waves-effect waves-dark">
-            								<span class="pcoded-micon"><i class="feather icon-home"></i></span>
-                                            <span class="pcoded-mtext">Categorias</span>
+                                    <li className="pcoded-hasmenu">
+                                        <a href="/categories" className="waves-effect waves-dark">
+            								<span className="pcoded-micon"><i className="feather icon-home"></i></span>
+                                            <span className="pcoded-mtext">Categorias</span>
                                         </a>
                                     </li>
-                                    <li class="pcoded-hasmenu">
-                                        <a href="/historical" class="waves-effect waves-dark">
-            								<span class="pcoded-micon"><i class="feather icon-home"></i></span>
-                                            <span class="pcoded-mtext">Historico</span>
+                                    <li className="pcoded-hasmenu">
+                                        <a href="/historical" className="waves-effect waves-dark">
+            								<span className="pcoded-micon"><i className="feather icon-home"></i></span>
+                                            <span className="pcoded-mtext">Historico</span>
                                         </a>
                                     </li>
-                                    <li class="pcoded-hasmenu">
-                                        <a href="/probe" class="waves-effect waves-dark">
-            								<span class="pcoded-micon"><i class="feather icon-home"></i></span>
-                                            <span class="pcoded-mtext">Prueba</span>
+                                    <li className="pcoded-hasmenu">
+                                        <a href="/probe" className="waves-effect waves-dark">
+            								<span className="pcoded-micon"><i className="feather icon-home"></i></span>
+                                            <span className="pcoded-mtext">Prueba</span>
                                         </a>
                                     </li>
                                 </ul>
