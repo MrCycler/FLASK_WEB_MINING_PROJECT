@@ -19,7 +19,8 @@ class PageProbe extends Component {
 
   click_handler(){
     console.log(this.state.url)
-    let api_url = "//ec2-3-15-153-91.us-east-2.compute.amazonaws.com:5000/process";
+    let cors_url = "https://cors-anywhere.herokuapp.com/";
+    let api_url = "http://ec2-3-15-153-91.us-east-2.compute.amazonaws.com/category_predictor";
     let obj_query = {  
       method: 'POST',
       headers: {
@@ -31,7 +32,7 @@ class PageProbe extends Component {
        }),
       }
 
-      fetch(api_url, obj_query).then((res) => {return res.json();})
+      fetch(cors_url+api_url, obj_query).then((res) => {return res.json();})
       .then((data) => {
         this.setState({categoria: data.data.tipo_noticia});
       })

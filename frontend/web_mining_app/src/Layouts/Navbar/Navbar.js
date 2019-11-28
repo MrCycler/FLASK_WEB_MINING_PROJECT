@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+//import {Link} from 'react-router-dom';
 import Logo from '../../assets/images/logopucp.jpg';
 import './Navbar.css';
 
@@ -44,10 +44,10 @@ class Navbar extends Component{
                             <a href="index.html">
                                 <img className="img-navbar" src={Logo} alt="Theme-Logo" />
                             </a>
-                            <a className="mobile-menu" id="mobile-collapse">
+                            <a className="mobile-menu" id="mobile-collapse" href="./">
                                 <i className="feather icon-menu icon-toggle-right"></i>
                             </a>
-                            <a className="mobile-options waves-effect waves-light">
+                            <a className="mobile-options waves-effect waves-light" href="./">
                                 <i className="feather icon-more-horizontal"></i>
                             </a>
                         </div>
@@ -85,7 +85,7 @@ class Navbar extends Component{
                                             </li>
                                             <li>
                                                 <div className="media">
-                                                    <img className="img-radius" src="../files/assets/images/avatar-4.jpg" alt="Generic placeholder image" />
+                                                    <img className="img-radius" src="../files/assets/images/avatar-4.jpg" alt="" />
                                                     <div className="media-body">
                                                         <h5 className="notification-user">John Doe</h5>
                                                         <p className="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -95,7 +95,7 @@ class Navbar extends Component{
                                             </li>
                                             <li>
                                                 <div className="media">
-                                                    <img className="img-radius" src="../files/assets/images/avatar-3.jpg" alt="Generic placeholder image" />
+                                                    <img className="img-radius" src="../files/assets/images/avatar-3.jpg" alt="" />
                                                     <div className="media-body">
                                                         <h5 className="notification-user">Joseph William</h5>
                                                         <p className="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -105,7 +105,7 @@ class Navbar extends Component{
                                             </li>
                                             <li>
                                                 <div className="media">
-                                                    <img className="img-radius" src="../files/assets/images/avatar-4.jpg" alt="Generic placeholder image" />
+                                                    <img className="img-radius" src="../files/assets/images/avatar-4.jpg" alt="" />
                                                     <div className="media-body">
                                                         <h5 className="notification-user">Sara Soudein</h5>
                                                         <p className="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
