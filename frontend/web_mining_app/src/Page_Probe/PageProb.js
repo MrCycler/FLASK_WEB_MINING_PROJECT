@@ -7,6 +7,7 @@ class PageProbe extends Component {
     super();
         this.state = {
           url :"", 
+          categoria:"",
         }  
         this.click_handler = this.click_handler.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -18,6 +19,24 @@ class PageProbe extends Component {
 
   click_handler(){
     console.log(this.state.url)
+    let api_url = "//ec2-3-15-153-91.us-east-2.compute.amazonaws.com:5000/process";
+    let obj_query = {  
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+
+      body:JSON.stringify({
+          url:this.state.url,        
+       }),
+      }
+
+      fetch(api_url, obj_query).then((res) => {return res.json();})
+      .then((data) => {
+        this.setState({categoria: data.data.tipo_noticia});
+      })
+
+
   }
 
 componentDidMount() {}
@@ -46,7 +65,7 @@ render() {
               <div className="col-md-12 col-xl-8">
                 <input className="pageprob_input" type="text" value={this.state.url} onChange={this.handleChange}></input>
                 <button className="pageprob_button" onClick={this.click_handler}>Probar</button>
-                <input className="pageprob_input" disabled></input>
+                <input className="pageprob_input" value={this.state.categoria} disabled></input>
                 <div className="card sale-card">
                   <div className="card-header">
                     <h5>Data prueba</h5>
