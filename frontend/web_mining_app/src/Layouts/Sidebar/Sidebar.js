@@ -45,7 +45,7 @@ class Sidebar extends Component{
                                         </a>
                                     </li>
                                     <li className="pcoded-hasmenu">
-                                        <a href="/probe" className="waves-effect waves-dark">
+                                        <a href="/prove" className="waves-effect waves-dark">
             								<span className="pcoded-micon"><i className="feather icon-home"></i></span>
                                             <span className="pcoded-mtext">Prueba</span>
                                         </a>

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.ad57d31f.chunk.css",
-    "main.js": "/static/js/main.10081fee.chunk.js",
-    "main.js.map": "/static/js/main.10081fee.chunk.js.map",
+    "main.js": "/static/js/main.4e21aff6.chunk.js",
+    "main.js.map": "/static/js/main.4e21aff6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1b4c5ebd.js",
     "runtime-main.js.map": "/static/js/runtime-main.1b4c5ebd.js.map",
     "static/js/2.93e8f55c.chunk.js": "/static/js/2.93e8f55c.chunk.js",
     "static/js/2.93e8f55c.chunk.js.map": "/static/js/2.93e8f55c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cf058f80df73d4bcb5fe68c0e3c253dd.js": "/precache-manifest.cf058f80df73d4bcb5fe68c0e3c253dd.js",
+    "precache-manifest.d8f7b6ccde88784d282301f22ab2f7e2.js": "/precache-manifest.d8f7b6ccde88784d282301f22ab2f7e2.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.ad57d31f.chunk.css.map": "/static/css/main.ad57d31f.chunk.css.map",
     "static/media/comercio_logo.jpg": "/static/media/comercio_logo.40383d19.jpg",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.1b4c5ebd.js",
     "static/js/2.93e8f55c.chunk.js",
     "static/css/main.ad57d31f.chunk.css",
-    "static/js/main.10081fee.chunk.js"
+    "static/js/main.4e21aff6.chunk.js"
   ]
 }

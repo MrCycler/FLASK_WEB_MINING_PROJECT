@@ -51,7 +51,7 @@ class App extends Component {
             <Switch>
                 <Route exact path="/" component={PageSrc}/>  
                 <Route path="/historical" component={PageHist}/>   
-                <Route path="/probe" component={PageProb}/>  
+                <Route path="/prove" component={PageProb}/>  
                 <Route path="/sources" component={PageSrc}/>   
                 <Route path="/categories" component={PageCat}/> 
                 <Route  component={Page404}/>   
