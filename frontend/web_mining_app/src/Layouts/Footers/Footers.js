@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import MaterialIcon from 'material-icons-react';
 import FontAwesome from 'react-fontawesome';
-import './Footers.css';
+//import './Footers.css';
+
+import Background from '../../assets/unicat/images/footer_background.png';
+import Mobile1 from '../../assets/unicat/images/mobile_1.png';
+import Mobile2 from '../../assets/unicat/images/mobile_2.png';
+
 
 class Footers extends Component {
   constructor(){
@@ -20,46 +25,43 @@ class Footers extends Component {
     render() {
 
       return (
-        <footer class="footer">
-          <div class="footer_background" style="background-image:url(images/footer_background.png)"></div>
-          <div class="container">
-            <div class="row footer_row">
-              <div class="col">
-                <div class="footer_content">
-                  <div class="row">
+        <footer className="footer">
+          <div className="footer_background"></div>
+          <div className="container">
+            <div className="row footer_row">
+              <div className="col">
+                <div className="footer_content">
+                  <div className="row">
 
-                    <div class="col-lg-3 footer_col">
-                
-                      <!-- Footer About -->
-                      <div class="footer_section footer_about">
-                        <div class="footer_logo_container">
+                    <div className="col-lg-4 footer_col">                
+            
+                      <div className="footer_section footer_about">
+                        <div className="footer_logo_container">
                           <a href="#">
-                            <div class="footer_logo_text">Unic<span>at</span></div>
+                            <div className="footer_logo_text">TPM<span> Analytics</span></div>
                           </a>
                         </div>
-                        <div class="footer_about_text">
+                        <div className="footer_about_text">
                           <p>Lorem ipsum dolor sit ametium, consectetur adipiscing elit.</p>
                         </div>
-                        <div class="footer_social">
+                        <div className="footer_social">
                           <ul>
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i className="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
                           </ul>
                         </div>
                       </div>
                       
                     </div>
-
-                    <div class="col-lg-3 footer_col">
+                    <div className="col-lg-4 footer_col">
                 
-                      <!-- Footer Contact -->
-                      <div class="footer_section footer_contact">
-                        <div class="footer_title">Contact Us</div>
-                        <div class="footer_contact_info">
+                      <div className="footer_section footer_contact">
+                        <div className="footer_title">Contact Us</div>
+                        <div className="footer_contact_info">
                           <ul>
-                            <li>Email: <a href="https://colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b7fed9d1d899d3d2d2c5d4c5d2d6c3dec1d2f7d0dad6dedb99d4d8da">[email&#160;protected]</a></li>
+                            <li>Email: <a href="https://colorlib.com/cdn-cgi/l/email-protection" className="__cf_email__" data-cfemail="b7fed9d1d899d3d2d2c5d4c5d2d6c3dec1d2f7d0dad6dedb99d4d8da">[email&#160;protected]</a></li>
                             <li>Phone:  +(88) 111 555 666</li>
                             <li>40 Baria Sreet 133/2 New York City, United States</li>
                           </ul>
@@ -68,12 +70,12 @@ class Footers extends Component {
                       
                     </div>
 
-                    <div class="col-lg-3 footer_col">
+                    <div className="col-lg-4 footer_col">
                 
-                      <!-- Footer links -->
-                      <div class="footer_section footer_links">
-                        <div class="footer_title">Contact Us</div>
-                        <div class="footer_links_container">
+             
+                      <div className="footer_section footer_links">
+                        <div className="footer_title">Contact Us</div>
+                        <div className="footer_links_container">
                           <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
@@ -89,31 +91,21 @@ class Footers extends Component {
                       
                     </div>
 
-                    <div class="col-lg-3 footer_col clearfix">
-            
-                      <div class="footer_section footer_mobile">
-                        <div class="footer_title">Mobile</div>
-                        <div class="footer_mobile_content">
-                          <div class="footer_image"><a href="#"><img src="images/mobile_1.png" alt=""></a></div>
-                          <div class="footer_image"><a href="#"><img src="images/mobile_2.png" alt=""></a></div>
-                        </div>
-                      </div>
-                      
-                    </div>
+                   
 
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="row copyright_row">
-              <div class="col">
-                <div class="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start">
-                  <div class="cr_text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                      Copyright &copy; All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+            <div className="row copyright_row">
+              <div className="col">
+                <div className="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start">
+                  <div className="cr_text">
+                      Copyright &copy; All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
                   </div>
-                  <div class="ml-lg-auto cr_links">
-                    <ul class="cr_list">
+                  <div className="ml-lg-auto cr_links">
+                    <ul className="cr_list">
                       <li><a href="#">Copyright notification</a></li>
                       <li><a href="#">Terms of Use</a></li>
                       <li><a href="#">Privacy Policy</a></li>

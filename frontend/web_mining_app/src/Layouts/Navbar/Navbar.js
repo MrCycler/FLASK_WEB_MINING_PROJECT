@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 //import {Link} from 'react-router-dom';
-import Logo from '../../assets/unicat/images/logomaestria.jpg';
+import Logo from '../../assets/unicat/images/logomaestria.png';
 import {Button, Modal,  ModalBody } from 'reactstrap';
 //import Logo from '../../assets/images/logopucp.jpg';
 import './Navbar.css';
@@ -96,11 +96,7 @@ class Navbar extends Component{
                                             <li><a href="blog.html">Categorías</a></li>      
                                             <li><a href="/graficos">Gráficos</a></li>                                    
                                         </ul>
-                                        <div className="search_button"><i className="fa fa-search" aria-hidden="true"></i></div>
-                                       
-                                        <div className="hamburger menu_mm">
-                                            <i className="fa fa-bars menu_mm" aria-hidden="true"></i>
-                                        </div>
+                                        
                                     </nav>
 
                                 </div>

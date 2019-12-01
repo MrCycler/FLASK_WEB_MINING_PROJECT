@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 //import {Link} from 'react-router-dom';
-import Icon1 from '../../assets/unicat/images/icon_1.png';
+import Icon1 from '../../assets/unicat/images/webscraping.png';
 import Icon2 from '../../assets/unicat/images/icon_2.png';
 import Icon3 from '../../assets/unicat/images/icon_3.png';
 import Icon4 from '../../assets/unicat/images/icon_4.png';
@@ -54,8 +54,8 @@ class Motivation extends Component{
                     <div className="row features_row">
                         <div className="col-lg-3 feature_col">
                             <div className="feature text-center trans_400">
-                                <div className="feature_icon"><img src={Icon1} /></div>
-                                <h3 className="feature_title">The Experts</h3>
+                                <div className="feature_icon"><img src={Icon1} width="50%" /></div>
+                                <h3 className="feature_title">Web Scrapping</h3>
                                 <div className="feature_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
                             </div>
                         </div>

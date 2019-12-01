@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './PageSrc.css';
 import Slider from '../Layouts/Slider/Slider';
 import Motivation from '../Layouts/Motivation/Motivation'
+import Footers from '../Layouts/Footers/Footers';
 class PageSource extends Component {
 
 
@@ -27,30 +28,7 @@ render() {
         </div>
         <Slider/>
         <Motivation/>
-        <div className="pcoded-inner-content">
-          <div className="main-body">
-            <div className="page-wrapper">
-              <div className="row">
-                <div className="col-md-12 col-xl-8">
-                  <div className="card sale-card">
-                    <div className="card-header">
-                      <h5>Data prueba</h5>
-                    </div>
-                    <div className="card-block">
-                      <iframe 
-                        className="frame-source"
-                        title="Frame categoria noticias"
-                        width="100%"
-                        height="600" 
-                        src="https://app.powerbi.com/view?r=eyJrIjoiOTI3Y2EzOWMtZDZhNS00NmU5LTlhMDktNWRkMjI5ZGNhY2FjIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}">
-                        </iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Footers/>
       </div>
     );
   }

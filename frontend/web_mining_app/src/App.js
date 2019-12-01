@@ -10,6 +10,7 @@ import PageProb from './Page_Probe/PageProb';
 //Importación de los layouts
 import Navbar from './Layouts/Navbar/Navbar';
 import Sidebar from './Layouts/Sidebar/Sidebar';
+
 import Page404 from './Layouts/Page404/Page404';
 //import Footers from './Layouts/Footers/Footers';
 
