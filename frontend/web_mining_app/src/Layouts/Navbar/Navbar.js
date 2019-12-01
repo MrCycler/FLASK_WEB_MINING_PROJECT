@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import Logo from '../../assets/unicat/images/logomaestria.jpg';
 import {Button, Modal,  ModalBody } from 'reactstrap';
 //import Logo from '../../assets/images/logopucp.jpg';
-//import './Navbar.css';
+import './Navbar.css';
 
 
 class Navbar extends Component{
@@ -113,8 +113,9 @@ class Navbar extends Component{
                 <Modal isOpen={this.state.modal_suscripcion} toggle={this.toggle_suscripcion}>
 
                     <ModalBody className="form_modal_body">
-                    Lancen su ga
-                   Ha Hame JA
+                     <h2>¿Dinos quien eres?</h2>
+                     <input className="input_suscripcion"></input>
+                     <button >sssss</button>
                     </ModalBody>
                 </Modal>
 
