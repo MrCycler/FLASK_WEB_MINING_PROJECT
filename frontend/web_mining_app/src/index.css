@@ -14,4 +14,24 @@ code {
 
 html, body, #root {
   height: 100%;
+  background-color: #F5F5F5;
 }
+
+
+/* Override Tabs Material design */
+.MuiTypography-root {
+  width: 100%;
+}
+
+.makeStyles-root-1 {
+  height: auto !important;
+}
+
+.MuiTab-wrapper {
+  color: rgb(70, 70, 70);
+}
+
+.frame-source {
+  margin: 0 !important;
+}
+/**********************************/

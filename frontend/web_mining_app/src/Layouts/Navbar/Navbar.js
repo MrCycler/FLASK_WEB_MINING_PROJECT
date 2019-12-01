@@ -88,12 +88,13 @@ class Navbar extends Component{
                                         </div>
                                     <nav className="main_nav_contaner ml-auto">
                                         <ul className="main_nav">
-                                            <li className="active"><a href="#">Home</a></li>
+                                            <li className="active"><a href="/">Home</a></li>
                                             <li><a href="about.html">Consolidado</a></li>
                                             <li><a href="courses.html">El Comercio</a></li>
                                             <li><a href="blog.html">Perú 21</a></li>
                                             <li><a href="blog.html">RPP</a></li>
-                                            <li><a href="blog.html">Categorías</a></li>                                          
+                                            <li><a href="blog.html">Categorías</a></li>      
+                                            <li><a href="/graficos">Gráficos</a></li>                                    
                                         </ul>
                                         <div className="search_button"><i className="fa fa-search" aria-hidden="true"></i></div>
                                        
