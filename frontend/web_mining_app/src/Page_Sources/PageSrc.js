@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './PageSrc.css';
 import Slider from '../Layouts/Slider/Slider';
-
+import Motivation from '../Layouts/Motivation/Motivation'
 class PageSource extends Component {
 
 
@@ -26,6 +26,7 @@ render() {
           </div>
         </div>
         <Slider/>
+        <Motivation/>
         <div className="pcoded-inner-content">
           <div className="main-body">
             <div className="page-wrapper">

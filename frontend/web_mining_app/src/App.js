@@ -16,8 +16,13 @@ import Page404 from './Layouts/Page404/Page404';
 //Componentes adicionales
 import ReactGA from 'react-ga';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import './App.css';
-
+//import './App.css';
+import './assets/unicat/styles/bootstrap4/bootstrap.min.css';
+import './assets/unicat/plugins/font-awesome-4.7.0/css/font-awesome.min.css';
+import './assets/unicat/plugins/OwlCarousel2-2.2.1/owl.carousel.css';
+import './assets/unicat/plugins/OwlCarousel2-2.2.1/animate.css';
+import './assets/unicat/styles/main_styles.css';
+import './assets/unicat/styles/responsive.css';
 class App extends Component {
 
   constructor(){
@@ -41,13 +46,9 @@ class App extends Component {
     return (
       
       <Router>
-        <div className="wrapper pcoded">
-          <div className="wrapper-header">
-            <Navbar/>
-          </div>
-          <div className="wrapper-sidebar">
-            <Sidebar/>
-          </div>
+        <div className="super_container">
+          <Navbar/>
+         
           <div className="wrapper-content">
             <Switch>
                 <Route exact path="/" component={PageSrc}/>  

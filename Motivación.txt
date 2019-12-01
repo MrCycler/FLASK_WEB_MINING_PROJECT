@@ -1,0 +1,3 @@
+La presente página muestra las actuales tasas de publicación de tres medios principales de noticias en el Perú basado en cuatro campos: Policiales/Crimen, Política/Economía, Sociales/Entretenimiento y Deportes.
+Con estas tasas podemos analizar y/o inferir: Qué campo es la tendencia principal de publicación de cada medio; Cuál es la tendencia de publicación a nivel general; cuales son los campos de mayor interés hacia el público y 
+otras más. Dejamos a su elección buscar otros tipos de análisis.    
