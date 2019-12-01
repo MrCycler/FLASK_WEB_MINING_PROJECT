@@ -47,12 +47,7 @@ class App extends Component {
       <Router>
         <div className="super_container">
           <Navbar/>
-          <div className="wrapper-header">
-           
-          </div>
-          <div className="wrapper-sidebar">
-            <Sidebar/>
-          </div>
+         
           <div className="wrapper-content">
             <Switch>
                 <Route exact path="/" component={PageSrc}/>  
