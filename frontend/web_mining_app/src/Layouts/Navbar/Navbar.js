@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 //import {Link} from 'react-router-dom';
-import Logo from '../../assets/unicat/images/logomaestria.png';
+import Logo from '../../assets/unicat/images/logomaestria.jpg';
+import {Row,Col,Container} from 'reactstrap';
 import {Button, Modal,  ModalBody } from 'reactstrap';
 //import Logo from '../../assets/images/logopucp.jpg';
 import './Navbar.css';
@@ -109,9 +110,16 @@ class Navbar extends Component{
                 <Modal isOpen={this.state.modal_suscripcion} toggle={this.toggle_suscripcion}>
 
                     <ModalBody className="form_modal_body">
-                     <h2>¿Dinos quien eres?</h2>
+                    <div className="form_modal_title">
+                        <h2>¿Dinos quien eres?</h2>
+                     </div>
+                     <div className="form_modal_body">
+                     <Row className="form_modal_body">
+                    
                      <input className="input_suscripcion"></input>
+                     </Row>
                      <button >sssss</button>
+                     </div>
                     </ModalBody>
                 </Modal>
 

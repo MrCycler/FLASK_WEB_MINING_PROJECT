@@ -7,3 +7,16 @@
     height: 180px;
     width: 200px;
 }
+
+.form_modal_title{
+    height: 180px;
+    width: 100%;
+    padding-top: 20px;
+    text-align:center;
+}
+
+.form_modal_body{
+    width: 100%;
+    padding-top: 20px;
+    text-align:center;
+}
