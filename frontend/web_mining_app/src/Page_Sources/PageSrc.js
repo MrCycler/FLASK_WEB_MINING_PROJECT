@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './PageSrc.css';
+import Slider from '../Layouts/Slider/Slider';
 
 class PageSource extends Component {
 
@@ -24,6 +25,7 @@ render() {
               </div>
           </div>
         </div>
+        <Slider/>
         <div className="pcoded-inner-content">
           <div className="main-body">
             <div className="page-wrapper">
