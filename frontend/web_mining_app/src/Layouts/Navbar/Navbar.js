@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 //import {Link} from 'react-router-dom';
 import Logo from '../../assets/unicat/images/logomaestria.jpg';
+import {Button, Modal,  ModalBody } from 'reactstrap';
+import Logo from '../../assets/images/logopucp.jpg';
 //import './Navbar.css';
 
 
@@ -8,8 +10,12 @@ class Navbar extends Component{
     constructor(){
         super();
         this.state = {
-            logos : []
+            logos : [],
+            modal_suscripcion: false,
+
         }
+
+        this.toggle_suscripcion = this.toggle_suscripcion.bind(this);
     }
 
     componentDidMount(){
@@ -31,6 +37,11 @@ class Navbar extends Component{
         //     navbar.classNameList.remove("navbar--sticky");
         // }
     }
+
+    toggle_suscripcion() {
+        this.setState(prevState => ({
+            modal_suscripcion: !prevState.modal_suscripcion}));
+      }
 
     
 
@@ -56,7 +67,7 @@ class Navbar extends Component{
                                             </li>
                                             </ul>
                                             <div className="top_bar_login ml-auto">
-                                                <div className="login_button"><a href="#">Register or Login</a></div>
+                                                <div className="login_button" onClick={this.toggle_suscripcion}><a href="#">Register or Login</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -98,7 +109,13 @@ class Navbar extends Component{
                 </div>
 
 
+                <Modal isOpen={this.state.modal_suscripcion} toggle={this.toggle_suscripcion}>
 
+                    <ModalBody className="form_modal_body">
+                    Lancen su ga
+                   Ha Hame JA
+                    </ModalBody>
+                </Modal>
 
 
             </header>
