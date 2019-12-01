@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "44370a3775d73f297eddf3bb86149c47",
+    "revision": "8b95476aaf2c295432c2210960ac4956",
     "url": "/index.html"
   },
   {
-    "revision": "d3a46bcd62dc2dbc4550",
-    "url": "/static/css/main.ad57d31f.chunk.css"
+    "revision": "49364f349a9af47c566b",
+    "url": "/static/css/main.34e8aa2c.chunk.css"
   },
   {
-    "revision": "a800accacd5e24acb5d6",
-    "url": "/static/js/2.93e8f55c.chunk.js"
+    "revision": "51544ab4f800731770f5",
+    "url": "/static/js/2.96e973fb.chunk.js"
   },
   {
-    "revision": "d3a46bcd62dc2dbc4550",
-    "url": "/static/js/main.4e21aff6.chunk.js"
+    "revision": "49364f349a9af47c566b",
+    "url": "/static/js/main.e0f79b5e.chunk.js"
   },
   {
     "revision": "d7e5e852c3ead21ca2b4",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/comercio_logo.40383d19.jpg"
   },
   {
-    "revision": "9cb48a8b1e4440a57439f02b52a1c5a5",
-    "url": "/static/media/logo_peru21.9cb48a8b.svg"
+    "revision": "6d1ac79e2fd626c3d0dd9d2bdf141923",
+    "url": "/static/media/logo_peru21.6d1ac79e.svg"
   },
   {
     "revision": "6646cddaf3e7f44b444e839780cb3820",

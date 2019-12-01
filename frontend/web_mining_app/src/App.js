@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 //Importación de las páginas como componentes
 import PageCat from './Page_Categories/PageCat';
+import PageGraphics from './Page_Graphics/PageGraphics';
 import PageSrc from './Page_Sources/PageSrc';
 import PageHist from './Page_Historical/PageHist';
 import PageProb from './Page_Probe/PageProb';
@@ -54,6 +55,7 @@ class App extends Component {
                 <Route path="/prove" component={PageProb}/>  
                 <Route path="/sources" component={PageSrc}/>   
                 <Route path="/categories" component={PageCat}/> 
+                <Route path="/graficos" component={PageGraphics}/> 
                 <Route  component={Page404}/>   
             </Switch>
           </div>
