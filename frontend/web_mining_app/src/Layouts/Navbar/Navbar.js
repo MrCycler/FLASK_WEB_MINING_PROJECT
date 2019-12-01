@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 //import {Link} from 'react-router-dom';
 import Logo from '../../assets/unicat/images/logomaestria.jpg';
 import {Button, Modal,  ModalBody } from 'reactstrap';
-import Logo from '../../assets/images/logopucp.jpg';
+//import Logo from '../../assets/images/logopucp.jpg';
 //import './Navbar.css';
 
 
