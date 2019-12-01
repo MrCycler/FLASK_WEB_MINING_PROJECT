@@ -4,19 +4,45 @@
 }
 
 .input_suscripcion{
-    height: 180px;
-    width: 200px;
+    height: 30px;
+    width: 300px;
 }
 
 .form_modal_title{
-    height: 180px;
+    
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align:center;
+}
+
+.form_modal_subtitle{
+    
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align:left;
+}
+
+
+.form_modal_button{
+    
     width: 100%;
     padding-top: 20px;
+    padding-bottom: 10px;
     text-align:center;
 }
 
 .form_modal_body{
     width: 100%;
-    padding-top: 20px;
+    padding-top: 40px;
+    text-align:center;
+}
+
+.button_suscripcion{
+    
+    width:100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align:center;
 }

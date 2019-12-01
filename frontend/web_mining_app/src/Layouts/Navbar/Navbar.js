@@ -113,13 +113,34 @@ class Navbar extends Component{
                     <div className="form_modal_title">
                         <h2>¿Dinos quien eres?</h2>
                      </div>
-                     <div className="form_modal_body">
-                     <Row className="form_modal_body">
-                    
-                     <input className="input_suscripcion"></input>
+                     
+                     
+
+                     <Row >
+                        <Col xs="2"></Col>
+                        <Col xs="8">
+                         <div className="form_modal_subtitle">
+                            <h4>Nombre:</h4>
+                         </div>
+                         <input className="input_suscripcion" type="name"></input>
+
+                         <div className="form_modal_subtitle">
+                            <h4>E-mail:</h4>
+                         </div>
+                         <input className="input_suscripcion"></input>
+
+                         
+
+                            <div className="form_modal_button">
+                            
+                            <button className="button_suscripcion" >Ingresar</button>
+                            </div>
+                        </Col>
+                         <Col xs="2"></Col>
                      </Row>
-                     <button >sssss</button>
-                     </div>
+                     
+                        
+                    
                     </ModalBody>
                 </Modal>
 
