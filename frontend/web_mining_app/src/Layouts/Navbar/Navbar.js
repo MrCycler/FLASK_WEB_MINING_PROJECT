@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 //import {Link} from 'react-router-dom';
 import Logo from '../../assets/unicat/images/logomaestria.jpg';
 import {Button, Modal,  ModalBody } from 'reactstrap';
+import TextField from '@material-ui/core/TextField';
 //import Logo from '../../assets/images/logopucp.jpg';
 import './Navbar.css';
 
@@ -88,13 +89,8 @@ class Navbar extends Component{
                                         </div>
                                     <nav className="main_nav_contaner ml-auto">
                                         <ul className="main_nav">
-                                            <li className="active"><a href="/">Home</a></li>
-                                            <li><a href="about.html">Consolidado</a></li>
-                                            <li><a href="courses.html">El Comercio</a></li>
-                                            <li><a href="blog.html">Perú 21</a></li>
-                                            <li><a href="blog.html">RPP</a></li>
-                                            <li><a href="blog.html">Categorías</a></li>      
-                                            <li><a href="/graficos">Gráficos</a></li>                                    
+                                            <li><a href="/">Inicio</a></li>
+                                            <li><a href="/graficos">Visualización de Gráficos</a></li>  
                                         </ul>
                                         <div className="search_button"><i className="fa fa-search" aria-hidden="true"></i></div>
                                        
@@ -113,9 +109,21 @@ class Navbar extends Component{
                 <Modal isOpen={this.state.modal_suscripcion} toggle={this.toggle_suscripcion}>
 
                     <ModalBody className="form_modal_body">
-                     <h2>¿Dinos quien eres?</h2>
-                     <input className="input_suscripcion"></input>
-                     <button >sssss</button>
+                        <div className="ModalContainer">
+                            <div className="ModalContainer__title">
+                                <h2>Suscripción</h2>
+                                <p>Si deseas obtener mas informacio dejanos tu correo electronico.</p>
+                            </div>
+                            <div className="ModalContainer__form">
+                                <div className="Form__input">
+                                    <TextField label="Nombre y apellidos" variant="outlined" />
+                                </div>
+                                <div className="Form__input">
+                                    <TextField label="Correo electrónico" variant="outlined" />
+                                </div>
+                            </div>
+                            <Button variant="contained" color="primary">Ingresar</Button>
+                        </div>
                     </ModalBody>
                 </Modal>
 

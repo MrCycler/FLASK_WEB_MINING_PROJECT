@@ -49,6 +49,13 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+const getQueryParams = function() {
+  let search = window.location.search;
+  let params = new URLSearchParams(search);
+  return Number(params.get('source'));
+}
+
+
 export default function PageGraphics() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
@@ -58,7 +65,7 @@ export default function PageGraphics() {
   };
 
   return (
-    <div className="Graphics">
+    <div className="Content Graphics">
       <div className="margin">
         <div className="Graphics_content">
           <div className={classes.root}>
@@ -76,40 +83,29 @@ export default function PageGraphics() {
               <Tab label="Consolidado" {...a11yProps(3)} />
             </Tabs>
             <TabPanel value={value} index={0}>
+              <h2 className="Tab__title">Fuente: RPP</h2>
               <iframe 
-                className="frame-source"
-                title="Frame categoria noticias"
-                width="100%"
-                height="600" 
-                src="https://app.powerbi.com/view?r=eyJrIjoiOTI3Y2EzOWMtZDZhNS00NmU5LTlhMDktNWRkMjI5ZGNhY2FjIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}">
-                </iframe>
+              width="100%" 
+              height="600" 
+              src="https://app.powerbi.com/view?r=eyJrIjoiMTE4Mzk5NGEtNWM0My00Y2Y5LTk5OTEtZjJmZGFiZjEyZjc0IiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}"></iframe>
             </TabPanel>
             <TabPanel value={value} index={1}>
+            <h2 className="Tab__title">Fuente: PERÚ21</h2>
             <iframe 
-                className="frame-source"
-                title="Frame categoria noticias"
-                width="100%"
-                height="600" 
-                src="https://app.powerbi.com/view?r=eyJrIjoiOTI3Y2EzOWMtZDZhNS00NmU5LTlhMDktNWRkMjI5ZGNhY2FjIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}">
-                </iframe>
+            width="100%"
+            height="600" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiZjc3ZmU4NWItYzRlZi00MGU3LWI0ZjMtNDhmZGI3Nzg2OWJlIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}"></iframe>
             </TabPanel>
             <TabPanel value={value} index={2}>
+            <h2 className="Tab__title">Fuente: El Comercio</h2>
             <iframe 
-                className="frame-source"
-                title="Frame categoria noticias"
-                width="100%"
-                height="600" 
-                src="https://app.powerbi.com/view?r=eyJrIjoiOTI3Y2EzOWMtZDZhNS00NmU5LTlhMDktNWRkMjI5ZGNhY2FjIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}">
-                </iframe>
+            width="100%" 
+            height="600" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiMjVkODM3MzItOGYwYS00M2QzLWJjOWEtMGJiYzBlNzkyOWM2IiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}"></iframe>
             </TabPanel>
             <TabPanel value={value} index={3}>
-            <iframe 
-                className="frame-source"
-                title="Frame categoria noticias"
-                width="100%"
-                height="600" 
-                src="https://app.powerbi.com/view?r=eyJrIjoiOTI3Y2EzOWMtZDZhNS00NmU5LTlhMDktNWRkMjI5ZGNhY2FjIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}">
-                </iframe>
+            <h2 className="Tab__title">Todas las fuentes</h2>
+            <iframe width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYWMwYTFkZTUtOGZlMi00ZWQzLThhOTctYmQ1ZTkwZWExNGZlIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}"></iframe>
             </TabPanel>
           </div>
         </div>

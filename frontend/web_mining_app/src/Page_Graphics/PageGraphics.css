@@ -1,16 +1,11 @@
-.Graphics {
-    padding-top: 130px;
-}
-
-.margin {
-    width: 1100px;
-    margin: 0 auto;
-}
-
 .Graphics .margin {
     padding: 30px 0;
 }
 
 .Graphics .Graphics_content {
     background-color: white;
+}
+
+.Tab__title {
+    font-size: 20px;
 }

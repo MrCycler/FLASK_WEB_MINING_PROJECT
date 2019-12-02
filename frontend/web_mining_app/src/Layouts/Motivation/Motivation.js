@@ -51,37 +51,6 @@ class Motivation extends Component{
                             </div>
                         </div>
                     </div>
-                    <div className="row features_row">
-                        <div className="col-lg-3 feature_col">
-                            <div className="feature text-center trans_400">
-                                <div className="feature_icon"><img src={Icon1} /></div>
-                                <h3 className="feature_title">The Experts</h3>
-                                <div className="feature_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 feature_col">
-                            <div className="feature text-center trans_400">
-                                <div className="feature_icon"><img src={Icon2} /></div>
-                                <h3 className="feature_title">Book & Library</h3>
-                                <div className="feature_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 feature_col">
-                            <div className="feature text-center trans_400">
-                                <div className="feature_icon"><img src={Icon3} /></div>
-                                <h3 className="feature_title">Best Courses</h3>
-                                <div className="feature_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 feature_col">
-                            <div className="feature text-center trans_400">
-                                <div className="feature_icon"><img src={Icon4}/></div>
-                                <h3 className="feature_title">Award & Reward</h3>
-                                <div className="feature_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
             </div>
             

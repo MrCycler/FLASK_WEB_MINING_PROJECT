@@ -17,6 +17,16 @@ html, body, #root {
   background-color: #F5F5F5;
 }
 
+.Content {
+  padding-top: 130px;
+}
+
+.margin {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+
 
 /* Override Tabs Material design */
 .MuiTypography-root {

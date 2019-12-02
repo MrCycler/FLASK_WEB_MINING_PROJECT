@@ -7,3 +7,39 @@
     height: 180px;
     width: 200px;
 }
+
+.ModalContainer {
+    padding: 20px;
+    text-align: center;
+}
+
+.ModalContainer .ModalContainer__title {
+    margin-bottom: 25px;
+}
+
+.ModalContainer .ModalContainer__title h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.ModalContainer .ModalContainer__form .Form__input {
+    margin-bottom: 30px;
+}
+
+.Form__input {
+    text-align: left;
+}
+
+.Form__input p {
+    font-weight: bold;
+    margin-bottom: 5px !important;
+}
+
+.Form__input .MuiTextField-root {
+    width: 100%;
+}
+
+.ModalContainer button {
+    width: 100%;
+    padding: 12px .75rem;
+}
