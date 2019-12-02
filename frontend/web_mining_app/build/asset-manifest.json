@@ -1,26 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ad63f6f.chunk.css",
-    "main.js": "/static/js/main.a924db10.chunk.js",
-    "main.js.map": "/static/js/main.a924db10.chunk.js.map",
+    "main.css": "/static/css/main.37bb6e77.chunk.css",
+    "main.js": "/static/js/main.fc0a796e.chunk.js",
+    "main.js.map": "/static/js/main.fc0a796e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1b4c5ebd.js",
     "runtime-main.js.map": "/static/js/runtime-main.1b4c5ebd.js.map",
-    "static/js/2.ed241f09.chunk.js": "/static/js/2.ed241f09.chunk.js",
-    "static/js/2.ed241f09.chunk.js.map": "/static/js/2.ed241f09.chunk.js.map",
+    "static/css/2.1f156bdb.chunk.css": "/static/css/2.1f156bdb.chunk.css",
+    "static/js/2.587ac1e2.chunk.js": "/static/js/2.587ac1e2.chunk.js",
+    "static/js/2.587ac1e2.chunk.js.map": "/static/js/2.587ac1e2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.18dba8ed6e1afde65dcb1b216cae4c36.js": "/precache-manifest.18dba8ed6e1afde65dcb1b216cae4c36.js",
+    "precache-manifest.250085f9f3808bc9e9d3e450afcc72eb.js": "/precache-manifest.250085f9f3808bc9e9d3e450afcc72eb.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.3ad63f6f.chunk.css.map": "/static/css/main.3ad63f6f.chunk.css.map",
+    "static/css/2.1f156bdb.chunk.css.map": "/static/css/2.1f156bdb.chunk.css.map",
+    "static/css/main.37bb6e77.chunk.css.map": "/static/css/main.37bb6e77.chunk.css.map",
+    "static/media/colaborative.png": "/static/media/colaborative.243e4a43.png",
     "static/media/comercio_logo.jpg": "/static/media/comercio_logo.40383d19.jpg",
+    "static/media/counter_background.jpg": "/static/media/counter_background.50c83a2a.jpg",
     "static/media/font-awesome.min.css": "/static/media/fontawesome-webfontd41d.674f50d2.eot",
-    "static/media/logo_peru21.svg": "/static/media/logo_peru21.6d1ac79e.svg",
+    "static/media/footer_background.png": "/static/media/footer_background.0ce68444.png",
+    "static/media/logo_peru21.svg": "/static/media/logo_peru21.9cb48a8b.svg",
     "static/media/logomaestria.jpg": "/static/media/logomaestria.34072d33.jpg",
-    "static/media/penguin.jpg": "/static/media/penguin.1b31eb6a.jpg"
+    "static/media/penguin.jpg": "/static/media/penguin.1b31eb6a.jpg",
+    "static/media/slider01.png": "/static/media/slider01.2526a09a.png",
+    "static/media/slides_02.png": "/static/media/slides_02.e3b05468.png",
+    "static/media/webscraping.png": "/static/media/webscraping.0c6fcf93.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1b4c5ebd.js",
-    "static/js/2.ed241f09.chunk.js",
-    "static/css/main.3ad63f6f.chunk.css",
-    "static/js/main.a924db10.chunk.js"
+    "static/css/2.1f156bdb.chunk.css",
+    "static/js/2.587ac1e2.chunk.js",
+    "static/css/main.37bb6e77.chunk.css",
+    "static/js/main.fc0a796e.chunk.js"
   ]
 }
