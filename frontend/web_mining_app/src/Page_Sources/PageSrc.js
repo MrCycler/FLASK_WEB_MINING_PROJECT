@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './PageSrc.css';
 import Slider from '../Layouts/Slider/Slider';
 import Motivation from '../Layouts/Motivation/Motivation'
+import Footers from '../Layouts/Footers/Footers';
+import Counter from '../Layouts/Counter/Counter';
 class PageSource extends Component {
 
 
@@ -15,13 +17,6 @@ render() {
         <Slider/>
         <Motivation/>
         
-
-
-
-
-
-
-
         <div class="team">
           <div class="team_background parallax-window" data-parallax="scroll" data-image-src="images/team_background.jpg" data-speed="0.8"></div>
           <div class="container">
@@ -69,24 +64,9 @@ render() {
           </div>
           </div>
           </div>
-
-      
           </div>
           </div>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       </div>
     );

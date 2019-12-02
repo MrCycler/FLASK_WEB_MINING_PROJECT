@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import MaterialIcon from 'material-icons-react';
 import FontAwesome from 'react-fontawesome';
-import './Footers.css';
+//import './Footers.css';
+
+import Background from '../../assets/unicat/images/footer_background.png';
+import Mobile1 from '../../assets/unicat/images/mobile_1.png';
+import Mobile2 from '../../assets/unicat/images/mobile_2.png';
+
 
 class Footers extends Component {
   constructor(){

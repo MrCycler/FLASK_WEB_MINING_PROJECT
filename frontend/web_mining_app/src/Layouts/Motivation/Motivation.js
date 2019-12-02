@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 //import {Link} from 'react-router-dom';
-import Icon1 from '../../assets/unicat/images/icon_1.png';
-import Icon2 from '../../assets/unicat/images/icon_2.png';
-import Icon3 from '../../assets/unicat/images/icon_3.png';
-import Icon4 from '../../assets/unicat/images/icon_4.png';
+import Icon1 from '../../assets/unicat/images/webscraping.png';
+import Icon2 from '../../assets/unicat/images/preprocessing.png';
+import Icon3 from '../../assets/unicat/images/analyssis.png';
+import Icon4 from '../../assets/unicat/images/colaborative.png';
 //import './Navbar.css';
 
 

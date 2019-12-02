@@ -8,6 +8,28 @@ import {
 } from 'reactstrap';
 
 import { Container, Row, Col } from 'reactstrap';
+import image1 from '../../assets/unicat/sliders/slider01.png';
+import image2 from '../../assets/unicat/sliders/slides_02.png';
+
+
+const items = [
+    {
+      src: image1,
+      altText: 'Slide 1',
+      caption: 'Slide 1'
+    },
+    {
+      src: image2,
+      altText: 'Slide 2',
+      caption: 'Slide 2'
+    },
+    {
+      src: image1,
+      altText: 'Slide 3',
+      caption: 'Slide 3'
+    }
+  ];
+
 //import './Sliders.css';
 
 class Sliders extends Component {
@@ -70,20 +92,20 @@ class Sliders extends Component {
       return (
       );})*/
 
-    let slides = this.state.sliderimages.map((item) => {
-      return (
-        <CarouselItem
-          className="custom-tag"
-          tag="div"
-          key={item.id}
-          onExiting={this.onExiting}
-          onExited={this.onExited}
-        >
-        <img src={item.acf.imagen.url} alt={this.state.altText} width="100%" height="100%"/>
-          <CarouselCaption className="text-danger" captionText="" captionHeader="" />
-        </CarouselItem>
-      );
-    });
+      const slides = items.map((item) => {
+        return (
+          <CarouselItem
+            className="custom-tag"
+            tag="div"
+            onExiting={this.onExiting}
+            onExited={this.onExited}
+            key={item.src}
+          >
+            <img src={item.src} alt={item.altText} width="100%" height="100%"/>
+            <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          </CarouselItem>
+        );
+      });
 
 
     return (
@@ -105,6 +127,9 @@ class Sliders extends Component {
         >
           <CarouselIndicators items={slides} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
           {slides}
+
+           
+
           <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
           <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
         </Carousel>

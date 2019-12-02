@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 //import {Link} from 'react-router-dom';
 import Logo from '../../assets/unicat/images/logomaestria.jpg';
+import {Row,Col,Container} from 'reactstrap';
 import {Button, Modal,  ModalBody } from 'reactstrap';
 import TextField from '@material-ui/core/TextField';
 //import Logo from '../../assets/images/logopucp.jpg';
@@ -92,11 +93,7 @@ class Navbar extends Component{
                                             <li><a href="/">Inicio</a></li>
                                             <li><a href="/graficos">Visualización de Gráficos</a></li>  
                                         </ul>
-                                        <div className="search_button"><i className="fa fa-search" aria-hidden="true"></i></div>
-                                       
-                                        <div className="hamburger menu_mm">
-                                            <i className="fa fa-bars menu_mm" aria-hidden="true"></i>
-                                        </div>
+                                        
                                     </nav>
 
                                 </div>
