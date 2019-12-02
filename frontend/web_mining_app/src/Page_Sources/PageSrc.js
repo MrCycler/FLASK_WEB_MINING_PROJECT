@@ -29,7 +29,7 @@ render() {
         </div>
         <Slider/>
         <Motivation/>
-        <Counter/>
+        
         <Footers/>
       </div>
     );
