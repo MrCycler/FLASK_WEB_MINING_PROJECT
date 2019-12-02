@@ -9,6 +9,7 @@ import {
 
 import { Container, Row, Col } from 'reactstrap';
 import image1 from '../../assets/unicat/sliders/slider01.png';
+import image2 from '../../assets/unicat/sliders/slides_02.png';
 
 
 const items = [
@@ -18,7 +19,7 @@ const items = [
       caption: 'Slide 1'
     },
     {
-      src: image1,
+      src: image2,
       altText: 'Slide 2',
       caption: 'Slide 2'
     },
@@ -94,11 +95,13 @@ class Sliders extends Component {
       const slides = items.map((item) => {
         return (
           <CarouselItem
+            className="custom-tag"
+            tag="div"
             onExiting={this.onExiting}
             onExited={this.onExited}
             key={item.src}
           >
-            <img src={item.src} alt={item.altText} />
+            <img src={item.src} alt={item.altText} width="100%" height="100%"/>
             <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
           </CarouselItem>
         );
