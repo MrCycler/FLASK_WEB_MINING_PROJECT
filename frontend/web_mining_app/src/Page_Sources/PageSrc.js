@@ -3,6 +3,7 @@ import './PageSrc.css';
 import Slider from '../Layouts/Slider/Slider';
 import Motivation from '../Layouts/Motivation/Motivation'
 import Footers from '../Layouts/Footers/Footers';
+import Counter from '../Layouts/Counter/Counter';
 class PageSource extends Component {
 
 
@@ -28,6 +29,7 @@ render() {
         </div>
         <Slider/>
         <Motivation/>
+        <Counter/>
         <Footers/>
       </div>
     );
