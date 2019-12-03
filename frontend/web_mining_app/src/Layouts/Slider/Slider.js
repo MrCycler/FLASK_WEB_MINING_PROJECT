@@ -8,25 +8,26 @@ import {
 } from 'reactstrap';
 
 import { Container, Row, Col } from 'reactstrap';
-import image1 from '../../assets/unicat/sliders/slider01.png';
-import image2 from '../../assets/unicat/sliders/slides_02.png';
+import image1 from '../../assets/unicat/sliders/slide_01.png';
+import image2 from '../../assets/unicat/sliders/slide_02.png';
+import image3 from '../../assets/unicat/sliders/slide_03.png';
 
 
 const items = [
     {
       src: image1,
-      altText: 'Slide 1',
-      caption: 'Slide 1'
+      altText: '',
+      caption: ''
     },
     {
       src: image2,
-      altText: 'Slide 2',
-      caption: 'Slide 2'
+      altText: '',
+      caption: ''
     },
     {
-      src: image1,
-      altText: 'Slide 3',
-      caption: 'Slide 3'
+      src: image3,
+      altText: '',
+      caption: ''
     }
   ];
 

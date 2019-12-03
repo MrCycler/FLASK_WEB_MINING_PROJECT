@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.37bb6e77.chunk.css",
-    "main.js": "/static/js/main.fc0a796e.chunk.js",
-    "main.js.map": "/static/js/main.fc0a796e.chunk.js.map",
+    "main.css": "/static/css/main.af0ead53.chunk.css",
+    "main.js": "/static/js/main.d9d94eef.chunk.js",
+    "main.js.map": "/static/js/main.d9d94eef.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1b4c5ebd.js",
     "runtime-main.js.map": "/static/js/runtime-main.1b4c5ebd.js.map",
     "static/css/2.1f156bdb.chunk.css": "/static/css/2.1f156bdb.chunk.css",
-    "static/js/2.587ac1e2.chunk.js": "/static/js/2.587ac1e2.chunk.js",
-    "static/js/2.587ac1e2.chunk.js.map": "/static/js/2.587ac1e2.chunk.js.map",
+    "static/js/2.f95d3dd4.chunk.js": "/static/js/2.f95d3dd4.chunk.js",
+    "static/js/2.f95d3dd4.chunk.js.map": "/static/js/2.f95d3dd4.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.250085f9f3808bc9e9d3e450afcc72eb.js": "/precache-manifest.250085f9f3808bc9e9d3e450afcc72eb.js",
+    "precache-manifest.94c7f3b95b6641ddfe23eb49c4a72820.js": "/precache-manifest.94c7f3b95b6641ddfe23eb49c4a72820.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.1f156bdb.chunk.css.map": "/static/css/2.1f156bdb.chunk.css.map",
-    "static/css/main.37bb6e77.chunk.css.map": "/static/css/main.37bb6e77.chunk.css.map",
+    "static/css/main.af0ead53.chunk.css.map": "/static/css/main.af0ead53.chunk.css.map",
     "static/media/colaborative.png": "/static/media/colaborative.243e4a43.png",
     "static/media/comercio_logo.jpg": "/static/media/comercio_logo.40383d19.jpg",
     "static/media/counter_background.jpg": "/static/media/counter_background.50c83a2a.jpg",
@@ -21,15 +21,16 @@
     "static/media/logo_peru21.svg": "/static/media/logo_peru21.9cb48a8b.svg",
     "static/media/logomaestria.jpg": "/static/media/logomaestria.34072d33.jpg",
     "static/media/penguin.jpg": "/static/media/penguin.1b31eb6a.jpg",
-    "static/media/slider01.png": "/static/media/slider01.2526a09a.png",
-    "static/media/slides_02.png": "/static/media/slides_02.e3b05468.png",
-    "static/media/webscraping.png": "/static/media/webscraping.0c6fcf93.png"
+    "static/media/slide_01.png": "/static/media/slide_01.2526a09a.png",
+    "static/media/slide_02.png": "/static/media/slide_02.e3b05468.png",
+    "static/media/slide_03.png": "/static/media/slide_03.fa78bb95.png",
+    "static/media/webscraping.png": "/static/media/webscraping.337b12b8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1b4c5ebd.js",
     "static/css/2.1f156bdb.chunk.css",
-    "static/js/2.587ac1e2.chunk.js",
-    "static/css/main.37bb6e77.chunk.css",
-    "static/js/main.fc0a796e.chunk.js"
+    "static/js/2.f95d3dd4.chunk.js",
+    "static/css/main.af0ead53.chunk.css",
+    "static/js/main.d9d94eef.chunk.js"
   ]
 }
