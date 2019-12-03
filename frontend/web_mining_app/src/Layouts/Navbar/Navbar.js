@@ -49,6 +49,13 @@ class Navbar extends Component{
 
     render() {
 
+        /*<div className="question">¿Alguna consulta?</div> 
+        <i className="fa fa-phone" aria-hidden="true"></i>
+        <div>+51 999-999-999</div>
+        <i className="fa fa-envelope-o" aria-hidden="true"></i>
+        <div><a href="" className="__cf_email__" data-cfemail=""> jose.balbuena@pucp.pe</a></div>
+        */
+
         return (
             <header className="header">
                 <div className="top_bar">
@@ -58,15 +65,9 @@ class Navbar extends Component{
                                 <div className="col">
                                     <div className="top_bar_content d-flex flex-row align-items-center justify-content-start">
                                         <ul className="top_bar_contact_list">
-                                            <li><div className="question">¿Alguna consulta?</div></li>
-                                            <li>
-                                                <i className="fa fa-phone" aria-hidden="true"></i>
-                                                <div>+51 999-999-999</div>
-                                            </li>
-                                            <li>
-                                                <i className="fa fa-envelope-o" aria-hidden="true"></i>
-                                                <div><a href="" className="__cf_email__" data-cfemail=""> jose.balbuena@pucp.pe</a></div>
-                                            </li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
                                             </ul>
                                             <div className="top_bar_login ml-auto">
                                                 <div className="login_button" onClick={this.toggle_suscripcion}><a href="#">Register or Login</a></div>

@@ -87,13 +87,7 @@ class Sliders extends Component {
 
   render() {
     const { activeIndex } = this.state;
-
-    /*
-    let noticias = this.state.noticias.map((noticia,index) => {    
-      return (
-      );})*/
-
-      const slides = items.map((item) => {
+    const slides = items.map((item) => {
         return (
           <CarouselItem
             className="custom-tag"
@@ -115,8 +109,14 @@ class Sliders extends Component {
           {
             `.custom-tag {
                 max-width: 100%;
-                height: 450px;
+                height: 480px;
                 background: black;
+              }
+
+              .home-slider {
+                max-width: 90%;
+                height: 480px;
+                margin: auto;
               }`
           }
         </style>
@@ -125,12 +125,10 @@ class Sliders extends Component {
           activeIndex={activeIndex}
           next={this.next}
           previous={this.previous}
+          className="home-slider"
         >
           <CarouselIndicators items={slides} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
           {slides}
-
-           
-
           <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
           <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
         </Carousel>

@@ -33,7 +33,7 @@ class Footers extends Component {
             <div class="col">
             <div class="footer_content">
             <div class="row">
-            <div class="col-lg-3 footer_col">
+            <div class="col-lg-4 footer_col">
 
             <div class="footer_section footer_about">
             <div class="footer_logo_container">
@@ -54,7 +54,7 @@ class Footers extends Component {
             </div>
             </div>
             </div>
-            <div class="col-lg-3 footer_col">
+            <div class="col-lg-4 footer_col">
 
             <div class="footer_section footer_contact">
             <div class="footer_title">Contact Us</div>
@@ -67,7 +67,7 @@ class Footers extends Component {
             </div>
             </div>
             </div>
-            <div class="col-lg-3 footer_col">
+            <div class="col-lg-4 footer_col">
 
             <div class="footer_section footer_links">
             <div class="footer_title">Contact Us</div>
@@ -85,16 +85,7 @@ class Footers extends Component {
             </div>
             </div>
             </div>
-            <div class="col-lg-3 footer_col clearfix">
-
-            <div class="footer_section footer_mobile">
-            <div class="footer_title">Mobile</div>
-            <div class="footer_mobile_content">
-            <div class="footer_image"><a href="#"><img src="images/mobile_1.png" alt=""/></a></div>
-            <div class="footer_image"><a href="#"><img src="images/mobile_2.png" alt=""/></a></div>
-            </div>
-            </div>
-            </div>
+            
             </div>
             </div>
             </div>
@@ -107,9 +98,7 @@ class Footers extends Component {
             </div>
             <div class="ml-lg-auto cr_links">
             <ul class="cr_list">
-            <li><a href="#">Copyright notification</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            
             </ul>
             </div>
             </div>
@@ -122,4 +111,19 @@ class Footers extends Component {
     }
   }
   
+  /*
+  <div class="col-lg-3 footer_col clearfix">
+
+            <div class="footer_section footer_mobile">
+            <div class="footer_title">Mobile</div>
+            <div class="footer_mobile_content">
+            <div class="footer_image"><a href="#"><img src="images/mobile_1.png" alt=""/></a></div>
+            <div class="footer_image"><a href="#"><img src="images/mobile_2.png" alt=""/></a></div>
+            </div>
+            </div>
+            </div>
+  
+  <li><a href="#">Copyright notification</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>*/
   export default Footers;
