@@ -57,7 +57,7 @@ const getQueryParams = function() {
 }*/
 
 
-export default function PageGraphics() {
+export default function PageGraphics(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 

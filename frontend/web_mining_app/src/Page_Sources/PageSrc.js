@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './PageSrc.css';
 import Slider from '../Layouts/Slider/Slider';
-import Motivation from '../Layouts/Motivation/Motivation'
+import Motivation from '../Layouts/Motivation/Motivation';
+import elcomercio_logo from '../assets/images/comercio_logo.jpg';
 //import Footers from '../Layouts/Footers/Footers';
 //import Counter from '../Layouts/Counter/Counter';
 class PageSource extends Component {
@@ -31,36 +32,52 @@ render() {
           <div class="row team_row">
           <div class="col-lg-3 col-md-6 team_col">
           <div class="team_item">
-          <div class="team_image"><img src="https://3.bp.blogspot.com/-oE-U3nVT5T4/Ve9yqAaT9ZI/AAAAAAAApqI/Kxmb67Dh6wI/s1600/rpp-noticias.jpg" alt=""/></div>
+          <div class="team_image">
+          <a href="./graficos"> 
+            <img className="logo-fuente" src="https://3.bp.blogspot.com/-oE-U3nVT5T4/Ve9yqAaT9ZI/AAAAAAAApqI/Kxmb67Dh6wI/s1600/rpp-noticias.jpg" alt=""/>
+            </a>   
+          </div>
           <div class="team_body">
-          <div class="team_title"><a href="#">RPP</a></div>
+          <div class="team_title"><a href="./graficos">RPP</a></div>
           </div>
           </div>
           </div>
 
           <div class="col-lg-3 col-md-6 team_col">
           <div class="team_item">
-          <div class="team_image"><img src="https://peru21.pe/pf/resources/dist/peru21/images/logo_fb.jpg?d=470" alt=""/></div>
+          <div class="team_image">
+          <a href="./graficos">
+            <img className="logo-fuente" src="https://peru21.pe/pf/resources/dist/peru21/images/logo_fb.jpg?d=470" alt=""/>
+            </a> 
+          </div>
           <div class="team_body">
-          <div class="team_title"><a href="#">Perú21</a></div>
+          <div class="team_title"><a href="./graficos">Perú21</a></div>
           </div>
           </div>
           </div>
 
           <div class="col-lg-3 col-md-6 team_col">
           <div class="team_item">
-          <div class="team_image"><img src="https://elcomercio.pe/pf/resources/dist/elcomercio/images/logo_fb.jpg?d=470" alt=""/></div>
+          <div class="team_image">
+          <a href="./graficos">
+            <img  className="logo-fuente" src={elcomercio_logo} alt=""/>
+            </a>   
+            </div>
           <div class="team_body">
-          <div class="team_title"><a href="#">El Comercio</a></div>
+          <div class="team_title"><a href="./graficos">El Comercio</a></div>
           </div>
           </div>
           </div>
 
           <div class="col-lg-3 col-md-6 team_col">
           <div class="team_item">
-          <div class="team_image"><img src="https://files.merca20.com/uploads/2017/01/bigstock-Stack-Of-Old-Newspapers-Pile-120921242-e1515773521154.jpg" alt=""/></div>
+          <div class="team_image">
+          <a href="./graficos">
+            <img className="logo-fuente" src="https://files.merca20.com/uploads/2017/01/bigstock-Stack-Of-Old-Newspapers-Pile-120921242-e1515773521154.jpg" alt=""/>
+            </a>  
+          </div>
           <div class="team_body">
-          <div class="team_title"><a href="#">Consolidado</a></div>
+          <div class="team_title"><a href="./graficos">Consolidado</a></div>
           </div>
           </div>
           </div>

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 //Importación de las páginas como componentes
-import PageCat from './Page_Categories/PageCat';
+//import PageCat from './Page_Categories/PageCat';
 import PageGraphics from './Page_Graphics/PageGraphics';
 import PageSrc from './Page_Sources/PageSrc';
-import PageHist from './Page_Historical/PageHist';
+//import PageHist from './Page_Historical/PageHist';
 import PageProb from './Page_Probe/PageProb';
 
 //Importación de los layouts
@@ -54,10 +54,7 @@ class App extends Component {
           <div className="wrapper-content">
             <Switch>
                 <Route exact path="/" component={PageSrc}/>  
-                <Route path="/historical" component={PageHist}/>   
                 <Route path="/prove" component={PageProb}/>  
-                <Route path="/sources" component={PageSrc}/>   
-                <Route path="/categories" component={PageCat}/> 
                 <Route path="/graficos" component={PageGraphics}/> 
                 <Route  component={Page404}/>   
             </Switch>

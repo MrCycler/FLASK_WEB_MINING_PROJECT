@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import image_404 from './assets/penguin.jpg';
+import image_404 from '../../assets/images/breaking_news.jpg';
 import './Page404.css';
 //BACKEND: 404 IMAGE SOURCE 
 class Page404 extends Component{
@@ -43,7 +43,7 @@ class Page404 extends Component{
         
         
         return (
-            <div className="App-header">
+            <div className="Prove-header">
             <Container>   
                     
             <Row>

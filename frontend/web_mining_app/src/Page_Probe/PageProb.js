@@ -69,14 +69,16 @@ render() {
   }
     return (
       <div className="content">
+        <div className="prove-header" >
+
+        </div>
       <div className="page-header card">
         <div className="row align-items-end">
             <div className="col-lg-8">
                 <div className="page-header-title">
                     <i className="feather icon-arrow-down bg-c-blue"></i>
                     <div className="d-inline">
-                        <h5>Prueba</h5>
-                        <span>En esta sección usted puede probar nuestro algoritmo</span>
+                        <h4 className="title-prove">En esta sección usted podrá probar nuestro algoritmo</h4>
                     </div>
                 </div>
             </div>

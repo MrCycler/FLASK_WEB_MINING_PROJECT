@@ -1,10 +1,11 @@
 .page404image{
     display:block;
-    height:300px; 
+    height:250px; 
     width:300px;
     margin-bottom:10px;
     margin-left: auto;
     margin-right: auto;
+    margin-top:140px;
 }
 
 .page404text{
@@ -12,5 +13,10 @@
    font-size: 20px;
    font-weight: bold;
    margin-bottom: 20px;
+   color:black;
+}
+
+.Prove-header{
+    margin-bottom: 50px;
 }
 

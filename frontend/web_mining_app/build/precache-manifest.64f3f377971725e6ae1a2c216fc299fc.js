@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "156a30901b19bc664a4c473f4a91fb3a",
+    "revision": "58f4d3e5c560e8b7b582670055849d81",
     "url": "/index.html"
   },
   {
-    "revision": "2de2a41744a3dbd86458",
-    "url": "/static/css/main.ac5860af.chunk.css"
+    "revision": "2b859c8fded6a4464da9",
+    "url": "/static/css/main.7e1f790c.chunk.css"
   },
   {
-    "revision": "f4270596b633bb3a423b",
-    "url": "/static/js/2.aad27ba0.chunk.js"
+    "revision": "39cde3fe319a27a05b0e",
+    "url": "/static/js/2.987b0d9e.chunk.js"
   },
   {
-    "revision": "2de2a41744a3dbd86458",
-    "url": "/static/js/main.928057bd.chunk.js"
+    "revision": "2b859c8fded6a4464da9",
+    "url": "/static/js/main.134968ac.chunk.js"
   },
   {
     "revision": "d7e5e852c3ead21ca2b4",
     "url": "/static/js/runtime-main.1b4c5ebd.js"
+  },
+  {
+    "revision": "03af7dcc14e95c3eb99b887dd6a30f36",
+    "url": "/static/media/breaking_news.03af7dcc.jpg"
   },
   {
     "revision": "40383d1955d120e4c9056decd1f99eaa",
@@ -54,10 +58,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "34072d33237fef9344e14576ccbab1e0",
     "url": "/static/media/logomaestria.34072d33.jpg"
-  },
-  {
-    "revision": "1b31eb6a3a717f46026a47ba4bb4c364",
-    "url": "/static/media/penguin.1b31eb6a.jpg"
   },
   {
     "revision": "2526a09a15088ed585974f85d2b957ec",

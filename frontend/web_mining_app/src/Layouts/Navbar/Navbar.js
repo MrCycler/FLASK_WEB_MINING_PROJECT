@@ -70,7 +70,7 @@ class Navbar extends Component{
                                             <li></li>
                                             </ul>
                                             <div className="top_bar_login ml-auto">
-                                                <div className="login_button" onClick={this.toggle_suscripcion}><a href="./#">Register or Login</a></div>
+                                                <div className="login_button" onClick={this.toggle_suscripcion}><a href="./#">Registrese</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -109,7 +109,7 @@ class Navbar extends Component{
                         <div className="ModalContainer">
                             <div className="ModalContainer__title">
                                 <h2>Suscripción</h2>
-                                <p>Si deseas obtener mas informacio dejanos tu correo electronico.</p>
+                                <p>Si deseas acceder a mayor información dejanos tu correo electrónico.</p>
                             </div>
                             <div className="ModalContainer__form">
                                 <div className="Form__input">
@@ -119,7 +119,9 @@ class Navbar extends Component{
                                     <TextField label="Correo electrónico" variant="outlined" />
                                 </div>
                             </div>
+                            <a href="/prove">
                             <Button variant="contained" color="primary">Ingresar</Button>
+                            </a>
                         </div>
                     </ModalBody>
                 </Modal>
