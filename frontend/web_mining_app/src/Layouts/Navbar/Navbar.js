@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 //import {Link} from 'react-router-dom';
 import Logo from '../../assets/unicat/images/logomaestria.jpg';
-import {Row,Col,Container} from 'reactstrap';
+//import {Row,Col,Container} from 'reactstrap';
 import {Button, Modal,  ModalBody } from 'reactstrap';
 import TextField from '@material-ui/core/TextField';
 //import Logo from '../../assets/images/logopucp.jpg';
@@ -70,7 +70,7 @@ class Navbar extends Component{
                                             <li></li>
                                             </ul>
                                             <div className="top_bar_login ml-auto">
-                                                <div className="login_button" onClick={this.toggle_suscripcion}><a href="#">Register or Login</a></div>
+                                                <div className="login_button" onClick={this.toggle_suscripcion}><a href="./#">Register or Login</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -84,9 +84,8 @@ class Navbar extends Component{
                                 <div className="col">
                                     <div className="header_content d-flex flex-row align-items-center justify-content-start">
                                         <div className="logo_container">
-                                            <a href="#">
-                                             <img src={Logo} width="70%"/>
-                                                
+                                            <a href="./">
+                                             <img src={Logo} width="70%" alt="logo-pucp"/>          
                                             </a>
                                         </div>
                                     <nav className="main_nav_contaner ml-auto">

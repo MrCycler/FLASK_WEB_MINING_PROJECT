@@ -49,11 +49,12 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+/*
 const getQueryParams = function() {
   let search = window.location.search;
   let params = new URLSearchParams(search);
   return Number(params.get('source'));
-}
+}*/
 
 
 export default function PageGraphics() {
@@ -87,6 +88,7 @@ export default function PageGraphics() {
               <iframe 
               width="100%" 
               height="600" 
+              title="RPP-category"
               src="https://app.powerbi.com/view?r=eyJrIjoiMTE4Mzk5NGEtNWM0My00Y2Y5LTk5OTEtZjJmZGFiZjEyZjc0IiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}"></iframe>
             </TabPanel>
             <TabPanel value={value} index={1}>
@@ -94,6 +96,7 @@ export default function PageGraphics() {
             <iframe 
             width="100%"
             height="600" 
+            title="peru21-category"
             src="https://app.powerbi.com/view?r=eyJrIjoiZjc3ZmU4NWItYzRlZi00MGU3LWI0ZjMtNDhmZGI3Nzg2OWJlIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}"></iframe>
             </TabPanel>
             <TabPanel value={value} index={2}>
@@ -101,11 +104,14 @@ export default function PageGraphics() {
             <iframe 
             width="100%" 
             height="600" 
+            title="elcomercio-category"
             src="https://app.powerbi.com/view?r=eyJrIjoiMjVkODM3MzItOGYwYS00M2QzLWJjOWEtMGJiYzBlNzkyOWM2IiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}"></iframe>
             </TabPanel>
             <TabPanel value={value} index={3}>
             <h2 className="Tab__title">Todas las fuentes</h2>
-            <iframe width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYWMwYTFkZTUtOGZlMi00ZWQzLThhOTctYmQ1ZTkwZWExNGZlIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}"></iframe>
+            <iframe width="100%" height="600"
+            title="all-category"
+            src="https://app.powerbi.com/view?r=eyJrIjoiYWMwYTFkZTUtOGZlMi00ZWQzLThhOTctYmQ1ZTkwZWExNGZlIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}"></iframe>
             </TabPanel>
           </div>
         </div>

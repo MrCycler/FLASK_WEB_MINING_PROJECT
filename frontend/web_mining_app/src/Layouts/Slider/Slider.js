@@ -7,7 +7,7 @@ import {
   CarouselCaption
 } from 'reactstrap';
 
-import { Container, Row, Col } from 'reactstrap';
+import { Row} from 'reactstrap';
 import image1 from '../../assets/unicat/sliders/slide_01.png';
 import image2 from '../../assets/unicat/sliders/slide_02.png';
 import image3 from '../../assets/unicat/sliders/slide_03.png';
@@ -116,6 +116,7 @@ class Sliders extends Component {
               .home-slider {
                 max-width: 90%;
                 height: 480px;
+                padding-top:5px;
                 margin: auto;
               }`
           }

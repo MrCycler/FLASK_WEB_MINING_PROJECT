@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import './PageSrc.css';
 import Slider from '../Layouts/Slider/Slider';
 import Motivation from '../Layouts/Motivation/Motivation'
-import Footers from '../Layouts/Footers/Footers';
-import Counter from '../Layouts/Counter/Counter';
+//import Footers from '../Layouts/Footers/Footers';
+//import Counter from '../Layouts/Counter/Counter';
 class PageSource extends Component {
 
 
 
 componentDidMount() {}
 
-
+/*TODO: Direccionar a los graficos respectivos*/
 render() {
     return (
       <div className="Content">

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import MaterialIcon from 'material-icons-react';
-import FontAwesome from 'react-fontawesome';
+//import { Container, Row, Col } from 'reactstrap';
+//import MaterialIcon from 'material-icons-react';
+//import FontAwesome from 'react-fontawesome';
 //import './Footers.css';
 
 import Background from '../../assets/unicat/images/counter_background.jpg';
-import Mobile1 from '../../assets/unicat/images/mobile_1.png';
-import Mobile2 from '../../assets/unicat/images/mobile_2.png';
+//import Mobile1 from '../../assets/unicat/images/mobile_1.png';
+//import Mobile2 from '../../assets/unicat/images/mobile_2.png';
 
 
 class Counter extends Component {

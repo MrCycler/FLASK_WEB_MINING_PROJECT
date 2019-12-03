@@ -1,39 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5ca5cf45103a74b0f4ca426578f440b6",
+    "revision": "156a30901b19bc664a4c473f4a91fb3a",
     "url": "/index.html"
   },
   {
-    "revision": "a91c5c72b7f04b04b44b",
-    "url": "/static/css/2.1f156bdb.chunk.css"
+    "revision": "2de2a41744a3dbd86458",
+    "url": "/static/css/main.ac5860af.chunk.css"
   },
   {
-    "revision": "1db9b6648bc32e05e28a",
-    "url": "/static/css/main.2f43d653.chunk.css"
+    "revision": "f4270596b633bb3a423b",
+    "url": "/static/js/2.aad27ba0.chunk.js"
   },
   {
-    "revision": "a91c5c72b7f04b04b44b",
-    "url": "/static/js/2.f95d3dd4.chunk.js"
-  },
-  {
-    "revision": "1db9b6648bc32e05e28a",
-    "url": "/static/js/main.bb7504e1.chunk.js"
+    "revision": "2de2a41744a3dbd86458",
+    "url": "/static/js/main.928057bd.chunk.js"
   },
   {
     "revision": "d7e5e852c3ead21ca2b4",
     "url": "/static/js/runtime-main.1b4c5ebd.js"
   },
   {
-    "revision": "243e4a43475e5aefeefe730e5246723f",
-    "url": "/static/media/colaborative.243e4a43.png"
-  },
-  {
     "revision": "40383d1955d120e4c9056decd1f99eaa",
     "url": "/static/media/comercio_logo.40383d19.jpg"
-  },
-  {
-    "revision": "50c83a2a7df6c4723f491637a833059f",
-    "url": "/static/media/counter_background.50c83a2a.jpg"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
@@ -60,10 +48,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/fontawesome-webfontd41d.674f50d2.eot"
   },
   {
-    "revision": "0ce684443d362673c925853f51b5dc97",
-    "url": "/static/media/footer_background.0ce68444.png"
-  },
-  {
     "revision": "9cb48a8b1e4440a57439f02b52a1c5a5",
     "url": "/static/media/logo_peru21.9cb48a8b.svg"
   },
@@ -86,9 +70,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fa78bb95b1d7f5a20065144c1223b83b",
     "url": "/static/media/slide_03.fa78bb95.png"
-  },
-  {
-    "revision": "337b12b8ea8c5e070385501cd9d8e16c",
-    "url": "/static/media/webscraping.337b12b8.png"
   }
 ]);

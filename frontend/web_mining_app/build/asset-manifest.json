@@ -1,36 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f43d653.chunk.css",
-    "main.js": "/static/js/main.bb7504e1.chunk.js",
-    "main.js.map": "/static/js/main.bb7504e1.chunk.js.map",
+    "main.css": "/static/css/main.ac5860af.chunk.css",
+    "main.js": "/static/js/main.928057bd.chunk.js",
+    "main.js.map": "/static/js/main.928057bd.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1b4c5ebd.js",
     "runtime-main.js.map": "/static/js/runtime-main.1b4c5ebd.js.map",
-    "static/css/2.1f156bdb.chunk.css": "/static/css/2.1f156bdb.chunk.css",
-    "static/js/2.f95d3dd4.chunk.js": "/static/js/2.f95d3dd4.chunk.js",
-    "static/js/2.f95d3dd4.chunk.js.map": "/static/js/2.f95d3dd4.chunk.js.map",
+    "static/js/2.aad27ba0.chunk.js": "/static/js/2.aad27ba0.chunk.js",
+    "static/js/2.aad27ba0.chunk.js.map": "/static/js/2.aad27ba0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.98056441cdc16f9161efd4222d509af5.js": "/precache-manifest.98056441cdc16f9161efd4222d509af5.js",
+    "precache-manifest.aacd5b65224a9a88f37f5c59c1bef3d9.js": "/precache-manifest.aacd5b65224a9a88f37f5c59c1bef3d9.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.1f156bdb.chunk.css.map": "/static/css/2.1f156bdb.chunk.css.map",
-    "static/css/main.2f43d653.chunk.css.map": "/static/css/main.2f43d653.chunk.css.map",
-    "static/media/colaborative.png": "/static/media/colaborative.243e4a43.png",
+    "static/css/main.ac5860af.chunk.css.map": "/static/css/main.ac5860af.chunk.css.map",
     "static/media/comercio_logo.jpg": "/static/media/comercio_logo.40383d19.jpg",
-    "static/media/counter_background.jpg": "/static/media/counter_background.50c83a2a.jpg",
     "static/media/font-awesome.min.css": "/static/media/fontawesome-webfontd41d.674f50d2.eot",
-    "static/media/footer_background.png": "/static/media/footer_background.0ce68444.png",
     "static/media/logo_peru21.svg": "/static/media/logo_peru21.9cb48a8b.svg",
     "static/media/logomaestria.jpg": "/static/media/logomaestria.34072d33.jpg",
     "static/media/penguin.jpg": "/static/media/penguin.1b31eb6a.jpg",
     "static/media/slide_01.png": "/static/media/slide_01.2526a09a.png",
     "static/media/slide_02.png": "/static/media/slide_02.e3b05468.png",
-    "static/media/slide_03.png": "/static/media/slide_03.fa78bb95.png",
-    "static/media/webscraping.png": "/static/media/webscraping.337b12b8.png"
+    "static/media/slide_03.png": "/static/media/slide_03.fa78bb95.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1b4c5ebd.js",
-    "static/css/2.1f156bdb.chunk.css",
-    "static/js/2.f95d3dd4.chunk.js",
-    "static/css/main.2f43d653.chunk.css",
-    "static/js/main.bb7504e1.chunk.js"
+    "static/js/2.aad27ba0.chunk.js",
+    "static/css/main.ac5860af.chunk.css",
+    "static/js/main.928057bd.chunk.js"
   ]
 }
