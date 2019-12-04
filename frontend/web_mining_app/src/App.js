@@ -6,6 +6,7 @@ import PageGraphics from './Page_Graphics/PageGraphics';
 import PageSrc from './Page_Sources/PageSrc';
 //import PageHist from './Page_Historical/PageHist';
 import PageProb from './Page_Probe/PageProb';
+import AboutUs from './AboutUs/AboutUs';
 
 //Importación de los layouts
 import Navbar from './Layouts/Navbar/Navbar';
@@ -55,6 +56,7 @@ class App extends Component {
             <Switch>
                 <Route exact path="/" component={PageSrc}/>  
                 <Route path="/prove" component={PageProb}/>  
+                <Route path="/aboutus" component={AboutUs}/> 
                 <Route path="/graficos" component={PageGraphics}/> 
                 <Route  component={Page404}/>   
             </Switch>

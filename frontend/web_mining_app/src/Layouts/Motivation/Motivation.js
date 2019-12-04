@@ -41,7 +41,7 @@ class Motivation extends Component{
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <div className="section_title_container text-center">
+                            <div className="text-center">
                                 <h2 className="section_title">Bienvenido a TPM Analytics</h2>
                                 <div className="section_subtitle">
                                     <p>TPM Analytics (Tendencias de Publicación de Medios) muestra las actuales tasas de publicación de tres medios principales de noticias en el Perú basado en cuatro campos: Policiales/Crimen, Política/Economía, Sociales/Entretenimiento y Deportes.</p>

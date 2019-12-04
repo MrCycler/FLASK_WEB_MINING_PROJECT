@@ -1,27 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "58f4d3e5c560e8b7b582670055849d81",
+    "revision": "8455b738ef6bce5ed70bd6ec4133cebe",
     "url": "/index.html"
   },
   {
-    "revision": "2b859c8fded6a4464da9",
-    "url": "/static/css/main.7e1f790c.chunk.css"
+    "revision": "6785c854f2d27555193d",
+    "url": "/static/css/main.55f157a2.chunk.css"
   },
   {
-    "revision": "39cde3fe319a27a05b0e",
-    "url": "/static/js/2.987b0d9e.chunk.js"
+    "revision": "699ff4ce08d3a70f4d99",
+    "url": "/static/js/2.cfb3cb26.chunk.js"
   },
   {
-    "revision": "2b859c8fded6a4464da9",
-    "url": "/static/js/main.134968ac.chunk.js"
+    "revision": "6785c854f2d27555193d",
+    "url": "/static/js/main.ed354203.chunk.js"
   },
   {
     "revision": "d7e5e852c3ead21ca2b4",
     "url": "/static/js/runtime-main.1b4c5ebd.js"
   },
   {
+    "revision": "0903505a8757dadaa708912436633f84",
+    "url": "/static/media/Hilda.0903505a.jpeg"
+  },
+  {
     "revision": "03af7dcc14e95c3eb99b887dd6a30f36",
     "url": "/static/media/breaking_news.03af7dcc.jpg"
+  },
+  {
+    "revision": "e9665277b32060e5226747ab272352f9",
+    "url": "/static/media/carlos.e9665277.jpeg"
   },
   {
     "revision": "40383d1955d120e4c9056decd1f99eaa",

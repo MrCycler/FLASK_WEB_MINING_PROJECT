@@ -25,7 +25,7 @@ render() {
           <div class="col">
           <div class="section_title_container text-center">
           <h2 class="section_title">Fuentes de Noticias</h2>
-          <div class="section_subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida arcu. Vestibulum feugiat, sapien ultrices fermentum congue, quam velit venenatis sem</p></div>
+          <div class="section_subtitle"><p>Para el análisis de tendencias extraimos un conjunto de noticias de las siguientes fuentes.</p></div>
           </div>
           </div>
           </div>

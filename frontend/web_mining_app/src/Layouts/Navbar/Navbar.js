@@ -91,7 +91,8 @@ class Navbar extends Component{
                                     <nav className="main_nav_contaner ml-auto">
                                         <ul className="main_nav">
                                             <li><a href="/">Inicio</a></li>
-                                            <li><a href="/graficos">Visualización de Gráficos</a></li>  
+                                            <li><a href="/graficos">Visualización de Gráficos</a></li> 
+                                            <li><a href="/aboutus">Acerca de nosotros</a></li>  
                                         </ul>
                                         
                                     </nav>
