@@ -70,7 +70,7 @@ class Footers extends Component {
               <li><a href="./graficos">Gráficos</a></li>
               <li><a href="https://www.pucp.edu.pe/">PUCP</a></li>
               <li><a href="https://posgrado.pucp.edu.pe/maestria/informatica/">PUCP - Informática</a></li>
-              <li><a href="./">Contactanos</a></li>
+              <li><a href="./">Nuestro trabajo</a></li>
               <li><a href="./aboutus">Acerca de nosotros</a></li>
             </ul>
             </div>

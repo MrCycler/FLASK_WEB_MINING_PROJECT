@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import { Button } from 'reactstrap';
 //import {Link} from 'react-router-dom';
 //import Icon1 from '../../assets/unicat/images/webscraping.png';
 //import Icon2 from '../../assets/unicat/images/preprocessing.png';
 //import Icon3 from '../../assets/unicat/images/analyssis.png';
 //import Icon4 from '../../assets/unicat/images/colaborative.png';
-//import './Navbar.css';
+import './Motivation.css';
 
 
 class Motivation extends Component{
@@ -47,6 +48,9 @@ class Motivation extends Component{
                                     <p>TPM Analytics (Tendencias de Publicación de Medios) muestra las actuales tasas de publicación de tres medios principales de noticias en el Perú basado en cuatro campos: Policiales/Crimen, Política/Economía, Sociales/Entretenimiento y Deportes.</p>
                                     <p>Con estas tasas podemos analizar y/o inferir: Qué campo es la tendencia principal de publicación de cada medio; Cuál es la tendencia de publicación a nivel general; cuales son los campos de mayor interés hacia el público y 
                                     otras más. Dejamos a su elección buscar otros tipos de análisis. </p>
+                                   <a href="./aboutus">
+                                    <Button className="aboutus-button" size="md"  color="primary">Conoce al equipo</Button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

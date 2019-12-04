@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './PageSrc.css';
 import Slider from '../Layouts/Slider/Slider';
-import Motivation from '../Layouts/Motivation/Motivation';
+import Motivation from '../Motivation/Motivation';
+import Cifras from '../Cifras/Cifras';
 import elcomercio_logo from '../assets/images/comercio_logo.jpg';
 //import Footers from '../Layouts/Footers/Footers';
 //import Counter from '../Layouts/Counter/Counter';
@@ -17,7 +18,7 @@ render() {
       <div className="Content">
         <Slider/>
         <Motivation/>
-        
+        <Cifras/>
         <div class="team">
           <div class="team_background parallax-window" data-parallax="scroll" data-image-src="images/team_background.jpg" data-speed="0.8"></div>
           <div class="container">
