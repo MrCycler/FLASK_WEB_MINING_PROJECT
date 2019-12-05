@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Button, Modal,  ModalBody } from 'reactstrap';
-import TextField from '@material-ui/core/TextField';
+import {Button } from 'reactstrap';
+//import TextField from '@material-ui/core/TextField';
 import { Row, Col } from 'reactstrap';
 import './Cifras.css';
 
@@ -13,15 +13,13 @@ class Cifras extends Component{
             cifra3: '1',
             cifra4: '4',
             change: false,
-            modal_suscripcion: false,
             date: new Date(), timepast:'',/*Cuanto tiempo a pasado en ms*/
         }
-        this.toggle_suscripcion = this.toggle_suscripcion.bind(this);
+        this.click_handler = this.click_handler.bind(this);
     }
 
-    toggle_suscripcion() {
-        this.setState(prevState => ({
-            modal_suscripcion: !prevState.modal_suscripcion}));
+    click_handler(){
+        document.getElementById("REGISTER").click();
       }
 
       componentDidMount() {
@@ -85,6 +83,16 @@ class Cifras extends Component{
     }    
 
     render() {
+
+        let button = "";
+        if(window.sessionStorage.getItem("auth")==='active')
+        {
+            button = <a href="./prove"><Button className="know-button" size="md"  color="info">Conoce Nuestra metodología</Button></a>;
+        }
+        else{
+            button = <Button   onClick={this.click_handler} className="know-button" size="md"  color="info">Conoce Nuestra metodología</Button>;
+        }
+
         return (
                 <div className="cifras-div" onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
                 <div className="container">
@@ -112,37 +120,14 @@ class Cifras extends Component{
                                 </Row>
                                 
                                 <div className="section_subtitle">
-                                   
-                                    <Button   onClick={this.toggle_suscripcion} className="know-button" size="md"  color="info">Conoce Nuestra metodología</Button>
-                                    
+                                   {button}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <Modal isOpen={this.state.modal_suscripcion} toggle={this.toggle_suscripcion}>
-
-                    <ModalBody className="form_modal_body">
-                        <div className="ModalContainer">
-                            <div className="ModalContainer__title">
-                                <h2>Suscripción</h2>
-                                <p>Si deseas acceder a mayor información dejanos tu correo electrónico.</p>
-                            </div>
-                            <div className="ModalContainer__form">
-                                <div className="Form__input">
-                                    <TextField label="Nombre y apellidos" variant="outlined" />
-                                </div>
-                                <div className="Form__input">
-                                    <TextField label="Correo electrónico" variant="outlined" />
-                                </div>
-                            </div>
-                            <a href="/prove">
-                            <Button variant="contained" color="primary">Ingresar</Button>
-                            </a>
-                        </div>
-                    </ModalBody>
-                </Modal>
+               
        </div>
             
             

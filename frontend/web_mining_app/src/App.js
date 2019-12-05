@@ -31,39 +31,48 @@ class App extends Component {
   constructor(){
     super();
         this.state = {
-          mostrate :[], 
+          isAuth:false,
         }  
         this.initializeReactGA = this.initializeReactGA.bind(this);
+        this.changeisAuth = this.changeisAuth.bind(this);
     }
 
     componentDidMount() {
       this.initializeReactGA();
-    }
+    };
+
+    changeisAuth(){
+      this.setState(prevState => ({
+        isAuth: !prevState.isAuth }));
+    };
 
     initializeReactGA() {
       ReactGA.initialize('UA-151341720-2');
       ReactGA.pageview('/');
-     }
+     };
 
   render() {
+    
     return (
       
-      <Router>
+     
         <div className="super_container">
-          <Navbar/>
-         
+        <Navbar log_handler={this.changeisAuth}/>
           <div className="wrapper-content">
+          <Router>
             <Switch>
+            
                 <Route exact path="/" component={PageSrc}/>  
                 <Route path="/prove" component={PageProb}/>  
                 <Route path="/aboutus" component={AboutUs}/> 
                 <Route path="/graficos" component={PageGraphics}/> 
-                <Route  component={Page404}/>   
-            </Switch>
+                <Route  component={Page404}/>  
+                
+            </Switch> </Router> 
+    
           </div>
           <Footers></Footers>
         </div>
-      </Router>
     
     );
   }

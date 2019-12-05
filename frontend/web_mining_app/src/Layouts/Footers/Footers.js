@@ -13,16 +13,23 @@ class Footers extends Component {
   constructor(){
     super();
     this.state = {
-        numerotamaño:[],
-        numerotamaño2:[],
-    }}
-
-    componentDidMount() {
-     
+      
     }
-
+    this.click_handler = this.click_handler.bind(this);
+    }
+    click_handler(){
+      document.getElementById("REGISTER").click();
+    }
   
     render() {
+      let li1 = "";
+      if(window.sessionStorage.getItem("auth")==='active')
+      {
+          li1 = <li ><a href='./prove' >Nuestro trabajo</a></li>;       
+      }
+      else{
+          li1 = <li ><a href='\\' onClick={this.click_handler} >Nuestro trabajo</a></li>;
+      }
 
       return (
         <footer>
@@ -70,8 +77,8 @@ class Footers extends Component {
               <li><a href="./graficos">Gráficos</a></li>
               <li><a href="https://www.pucp.edu.pe/">PUCP</a></li>
               <li><a href="https://posgrado.pucp.edu.pe/maestria/informatica/">PUCP - Informática</a></li>
-              <li><a href="./">Nuestro trabajo</a></li>
               <li><a href="./aboutus">Acerca de nosotros</a></li>
+              {li1}
             </ul>
             </div>
             </div>
@@ -102,28 +109,4 @@ class Footers extends Component {
     }
   }
   
-  /*
-  <div class="footer_social">
-            <ul>
-            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            </ul>
-            </div>
-
-  <div class="col-lg-3 footer_col clearfix">
-
-            <div class="footer_section footer_mobile">
-            <div class="footer_title">Mobile</div>
-            <div class="footer_mobile_content">
-            <div class="footer_image"><a href="#"><img src="images/mobile_1.png" alt=""/></a></div>
-            <div class="footer_image"><a href="#"><img src="images/mobile_2.png" alt=""/></a></div>
-            </div>
-            </div>
-            </div>
-  
-  <li><a href="#">Copyright notification</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy Policy</a></li>*/
   export default Footers;

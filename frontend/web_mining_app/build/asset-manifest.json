@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.56e94465.chunk.css",
-    "main.js": "/static/js/main.bfa2774a.chunk.js",
-    "main.js.map": "/static/js/main.bfa2774a.chunk.js.map",
+    "main.css": "/static/css/main.adc08709.chunk.css",
+    "main.js": "/static/js/main.d458b9ce.chunk.js",
+    "main.js.map": "/static/js/main.d458b9ce.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1b4c5ebd.js",
     "runtime-main.js.map": "/static/js/runtime-main.1b4c5ebd.js.map",
-    "static/js/2.39b0e1d8.chunk.js": "/static/js/2.39b0e1d8.chunk.js",
-    "static/js/2.39b0e1d8.chunk.js.map": "/static/js/2.39b0e1d8.chunk.js.map",
+    "static/js/2.188ad3fb.chunk.js": "/static/js/2.188ad3fb.chunk.js",
+    "static/js/2.188ad3fb.chunk.js.map": "/static/js/2.188ad3fb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d66142b5b63495c56fbbf3e4abca3f54.js": "/precache-manifest.d66142b5b63495c56fbbf3e4abca3f54.js",
+    "precache-manifest.a82a404b59a20d5cb916152922a9d1c4.js": "/precache-manifest.a82a404b59a20d5cb916152922a9d1c4.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.56e94465.chunk.css.map": "/static/css/main.56e94465.chunk.css.map",
+    "static/css/main.adc08709.chunk.css.map": "/static/css/main.adc08709.chunk.css.map",
     "static/media/Hilda.jpeg": "/static/media/Hilda.0903505a.jpeg",
     "static/media/breaking_news.jpg": "/static/media/breaking_news.03af7dcc.jpg",
     "static/media/carlos.jpeg": "/static/media/carlos.e9665277.jpeg",
@@ -18,14 +18,15 @@
     "static/media/font-awesome.min.css": "/static/media/fontawesome-webfontd41d.674f50d2.eot",
     "static/media/logo_peru21.svg": "/static/media/logo_peru21.9cb48a8b.svg",
     "static/media/logomaestria.jpg": "/static/media/logomaestria.34072d33.jpg",
+    "static/media/pablo.jpeg": "/static/media/pablo.ea78cbcb.jpeg",
     "static/media/slide_01.png": "/static/media/slide_01.2526a09a.png",
     "static/media/slide_02.png": "/static/media/slide_02.e3b05468.png",
     "static/media/slide_03.png": "/static/media/slide_03.fa78bb95.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1b4c5ebd.js",
-    "static/js/2.39b0e1d8.chunk.js",
-    "static/css/main.56e94465.chunk.css",
-    "static/js/main.bfa2774a.chunk.js"
+    "static/js/2.188ad3fb.chunk.js",
+    "static/css/main.adc08709.chunk.css",
+    "static/js/main.d458b9ce.chunk.js"
   ]
 }

@@ -16,7 +16,7 @@ class PageProbe extends Component {
           fuente_noticia:"",
 
         }  
-        this.click_handler = this.click_handler.bind(this);
+        
         this.handleChange = this.handleChange.bind(this);
     }
 
@@ -24,33 +24,7 @@ class PageProbe extends Component {
       this.setState({url: event.target.value});
     }
 
-  click_handler(){
-    console.log(this.state.url)
-    let cors_url = "https://cors-anywhere.herokuapp.com/";
-    let api_url = "ec2-3-15-153-91.us-east-2.compute.amazonaws.com/category_predictor";
-    let obj_query = {  
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/json',
-      },
-
-      body:JSON.stringify({
-          url:this.state.url,        
-       }),
-      }
-
-      fetch(cors_url+api_url, obj_query).then((res) => {return res.json();})
-      .then((data) => {
-        this.setState({
-          categoria_original: data.data.categoria_periodico,
-          categoria: data.data.tipo_noticia,
-          contenido: data.data.contenido,
-          fuente_noticia: data.data.fuente_noticia,  
-        });
-      })
-
-
-  }
+  
 
 componentDidMount() {}
 

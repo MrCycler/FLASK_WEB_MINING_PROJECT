@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ae68760275966f9afebcc3c49da78d4b",
+    "revision": "da71131c5ec00e4b8af0fde96e522fc3",
     "url": "/index.html"
   },
   {
-    "revision": "3ed6868d79df0df1900c",
-    "url": "/static/css/main.56e94465.chunk.css"
+    "revision": "57fa5a30f1ebec972c37",
+    "url": "/static/css/main.adc08709.chunk.css"
   },
   {
-    "revision": "72e44e2d1ce3ad69f5dd",
-    "url": "/static/js/2.39b0e1d8.chunk.js"
+    "revision": "dcfef7362c7d22bff9f4",
+    "url": "/static/js/2.188ad3fb.chunk.js"
   },
   {
-    "revision": "3ed6868d79df0df1900c",
-    "url": "/static/js/main.bfa2774a.chunk.js"
+    "revision": "57fa5a30f1ebec972c37",
+    "url": "/static/js/main.d458b9ce.chunk.js"
   },
   {
     "revision": "d7e5e852c3ead21ca2b4",
@@ -66,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "34072d33237fef9344e14576ccbab1e0",
     "url": "/static/media/logomaestria.34072d33.jpg"
+  },
+  {
+    "revision": "ea78cbcb0f2334f52d7e30cd1299905e",
+    "url": "/static/media/pablo.ea78cbcb.jpeg"
   },
   {
     "revision": "2526a09a15088ed585974f85d2b957ec",

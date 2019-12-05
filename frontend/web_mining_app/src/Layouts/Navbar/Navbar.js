@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-//import {Link} from 'react-router-dom';
 import Logo from '../../assets/unicat/images/logomaestria.jpg';
 //import {Row,Col,Container} from 'reactstrap';
 import {Button, Modal,  ModalBody } from 'reactstrap';
@@ -9,8 +8,8 @@ import './Navbar.css';
 
 
 class Navbar extends Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             logos : [],
             modal_suscripcion: false,
@@ -18,6 +17,8 @@ class Navbar extends Component{
         }
 
         this.toggle_suscripcion = this.toggle_suscripcion.bind(this);
+        this.onclick_subcription = this.onclick_subcription.bind(this);
+        this.out_subscription = this.out_subscription.bind(this);
     }
 
     componentDidMount(){
@@ -29,18 +30,25 @@ class Navbar extends Component{
         //window.addEventListener('scroll',this.handleScroll);
     }
 
-    /*Para hacer sticky el navbar */
     handleScroll = () => {
-        // var navbar = document.getElementById("navbar");
-        // var sticky = navbar.offsetTop;
-        // if (window.pageYOffset >= sticky){
-        //     navbar.classNameList.add("navbar--sticky");
-        // } else {
-        //     navbar.classNameList.remove("navbar--sticky");
-        // }
+    }
+
+
+    onclick_subcription(){
+        this.toggle_suscripcion();
+        this.props.log_handler(); 
+        window.sessionStorage.setItem("auth", "active");
+        
+    }
+
+    out_subscription(){
+        
+        this.props.log_handler(); 
+        window.sessionStorage.setItem("auth", "deactive");    
     }
 
     toggle_suscripcion() {
+       
         this.setState(prevState => ({
             modal_suscripcion: !prevState.modal_suscripcion}));
       }
@@ -49,12 +57,18 @@ class Navbar extends Component{
 
     render() {
 
-        /*<div className="question">¿Alguna consulta?</div> 
-        <i className="fa fa-phone" aria-hidden="true"></i>
-        <div>+51 999-999-999</div>
-        <i className="fa fa-envelope-o" aria-hidden="true"></i>
-        <div><a href="" className="__cf_email__" data-cfemail=""> jose.balbuena@pucp.pe</a></div>
-        */
+        let li1 = "";
+        let div1= "";
+        if(window.sessionStorage.getItem("auth")==='active')
+        {
+            li1 = <li><a href="/prove">Prueba</a></li>  
+            div1 = <div id="SALIR" className="login_button" onClick={this.out_subscription}><p className="Register_text">Salir</p></div>;
+           
+        }
+        else{
+            
+            div1 = <div id="REGISTER" className="login_button" onClick={this.toggle_suscripcion}><p className="Register_text">Registrese</p></div>;
+        }
 
         return (
             <header className="header">
@@ -70,7 +84,7 @@ class Navbar extends Component{
                                             <li></li>
                                             </ul>
                                             <div className="top_bar_login ml-auto">
-                                                <div className="login_button" onClick={this.toggle_suscripcion}><a href="./#">Registrese</a></div>
+                                                {div1}
                                             </div>
                                         </div>
                                     </div>
@@ -93,6 +107,7 @@ class Navbar extends Component{
                                             <li><a href="/">Inicio</a></li>
                                             <li><a href="/graficos">Visualización de Gráficos</a></li> 
                                             <li><a href="/aboutus">Acerca de nosotros</a></li>  
+                                           {li1}
                                         </ul>
                                         
                                     </nav>
@@ -120,9 +135,9 @@ class Navbar extends Component{
                                     <TextField label="Correo electrónico" variant="outlined" />
                                 </div>
                             </div>
-                            <a href="/prove">
-                            <Button variant="contained" color="primary">Ingresar</Button>
-                            </a>
+                            
+                            <Button variant="contained" color="primary" onClick={this.onclick_subcription}>Ingresar</Button>
+                            
                         </div>
                     </ModalBody>
                 </Modal>

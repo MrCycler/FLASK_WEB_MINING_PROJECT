@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Col,Row} from 'reactstrap';
-import Pablo from '../assets/images/team/pablo.jpg';
+import Pablo from '../assets/images/team/pablo.jpeg';
 import Carlos from '../assets/images/team/carlos.jpeg';
 import Hilda from '../assets/images/team/Hilda.jpeg';
 import Jose from '../assets/images/team/jose.jpeg';
