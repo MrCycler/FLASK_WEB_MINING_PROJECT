@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactGA from 'react-ga';
 import Logo from '../../assets/unicat/images/logomaestria.jpg';
 //import {Row,Col,Container} from 'reactstrap';
 import {Button, Modal,  ModalBody } from 'reactstrap';
@@ -19,32 +20,49 @@ class Navbar extends Component{
         this.toggle_suscripcion = this.toggle_suscripcion.bind(this);
         this.onclick_subcription = this.onclick_subcription.bind(this);
         this.out_subscription = this.out_subscription.bind(this);
+        this.in_subscription = this.in_subscription.bind(this);
+        this.initializeReactGA = this.initializeReactGA.bind(this); 
     }
 
-    componentDidMount(){
-        //window.addEventListener('scroll',this.handleScroll);
+    initializeReactGA() {
+        ReactGA.initialize('UA-151341720-2');
+       };
 
-    }
+    componentDidMount() {
+        this.initializeReactGA();
+      }
 
     componentWillUnmount(){
         //window.addEventListener('scroll',this.handleScroll);
     }
 
-    handleScroll = () => {
-    }
-
 
     onclick_subcription(){
         this.toggle_suscripcion();
+        ReactGA.event({
+            category: 'Conversion',
+            action: 'Subscripcion_exitosa'
+          });        
         this.props.log_handler(); 
         window.sessionStorage.setItem("auth", "active");
         
     }
 
     out_subscription(){
-        
+        ReactGA.event({
+            category: 'Salida',
+            action: 'Finalizo_Sesion'
+          });  
         this.props.log_handler(); 
         window.sessionStorage.setItem("auth", "deactive");    
+    }
+
+    in_subscription(){
+        ReactGA.event({
+            category: 'Click',
+            action: 'Subscripcion_desde_navbar',
+          });  
+          this.toggle_suscripcion();
     }
 
     toggle_suscripcion() {
@@ -67,7 +85,7 @@ class Navbar extends Component{
         }
         else{
             
-            div1 = <div id="REGISTER" className="login_button" onClick={this.toggle_suscripcion}><p className="Register_text">Registrese</p></div>;
+            div1 = <div id="REGISTER" className="login_button" onClick={this.in_subscription}><p className="Register_text">Registrese</p></div>;
         }
 
         return (

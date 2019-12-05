@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
@@ -49,17 +50,12 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-/*
-const getQueryParams = function() {
-  let search = window.location.search;
-  let params = new URLSearchParams(search);
-  return Number(params.get('source'));
-}*/
-
-
 export default function PageGraphics(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
+
+  ReactGA.initialize('UA-151341720-2');
+  ReactGA.pageview('/graficos');
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

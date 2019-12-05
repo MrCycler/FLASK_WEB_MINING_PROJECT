@@ -1,3 +1,4 @@
+import ReactGA from 'react-ga';
 import React, { Component } from 'react';
 import RPP from '../assets/images/rpp_logo.png';
 import ElComercio from '../assets/images/comercio_logo.jpg';
@@ -18,16 +19,56 @@ class PageProbe extends Component {
         }  
         
         this.handleChange = this.handleChange.bind(this);
+        this.click_handler = this.click_handler.bind(this);
+        this.initializeReactGA = this.initializeReactGA.bind(this);
     }
 
     handleChange(event) {
       this.setState({url: event.target.value});
     }
 
+    click_handler(){
+      ReactGA.event({
+        category: 'Conversion',
+        action: 'Prueba_Algoritmo'
+      });
+      
+      console.log(this.state.url)
+      let cors_url = "https://cors-anywhere.herokuapp.com/";
+      let api_url = "ec2-3-15-153-91.us-east-2.compute.amazonaws.com/category_predictor";
+      let obj_query = {  
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+  
+        body:JSON.stringify({
+            url:this.state.url,        
+         }),
+        }
+  
+        fetch(cors_url+api_url, obj_query).then((res) => {return res.json();})
+        .then((data) => {
+          this.setState({
+            categoria_original: data.data.categoria_periodico,
+            categoria: data.data.tipo_noticia,
+            contenido: data.data.contenido,
+            fuente_noticia: data.data.fuente_noticia,  
+          });
+        })
+  
+  
+    }
   
 
-componentDidMount() {}
+componentDidMount() {
+  this.initializeReactGA();
+}
 
+initializeReactGA() {
+  ReactGA.initialize('UA-151341720-2');
+  ReactGA.pageview('/prove');
+ };
 
 render() {
 

@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
-//import { Container, Row, Col } from 'reactstrap';
-//import MaterialIcon from 'material-icons-react';
-//import FontAwesome from 'react-fontawesome';
-//import './Footers.css';
-
-//import Background from '../../assets/unicat/images/footer_background.png';
-//import Mobile1 from '../../assets/unicat/images/mobile_1.png';
-//import Mobile2 from '../../assets/unicat/images/mobile_2.png';
+import ReactGA from 'react-ga';
 
 
 class Footers extends Component {
@@ -16,8 +9,18 @@ class Footers extends Component {
       
     }
     this.click_handler = this.click_handler.bind(this);
+    this.initializeReactGA = this.initializeReactGA.bind(this); 
     }
+
+    initializeReactGA() {
+      ReactGA.initialize('UA-151341720-2');
+     };
+
     click_handler(){
+      ReactGA.event({
+        category: 'Click',
+        action: 'Subscripcion_desde_footer',
+      }); 
       document.getElementById("REGISTER").click();
     }
   

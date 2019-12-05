@@ -17,7 +17,6 @@ import Page404 from './Layouts/Page404/Page404';
 //import Footers from './Layouts/Footers/Footers';
 
 //Componentes adicionales
-import ReactGA from 'react-ga';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 //import './App.css';
 import './assets/unicat/styles/bootstrap4/bootstrap.min.css';
@@ -33,12 +32,12 @@ class App extends Component {
         this.state = {
           isAuth:false,
         }  
-        this.initializeReactGA = this.initializeReactGA.bind(this);
+        
         this.changeisAuth = this.changeisAuth.bind(this);
     }
 
     componentDidMount() {
-      this.initializeReactGA();
+
     };
 
     changeisAuth(){
@@ -46,10 +45,7 @@ class App extends Component {
         isAuth: !prevState.isAuth }));
     };
 
-    initializeReactGA() {
-      ReactGA.initialize('UA-151341720-2');
-      ReactGA.pageview('/');
-     };
+   
 
   render() {
     

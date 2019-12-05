@@ -1,3 +1,4 @@
+import ReactGA from 'react-ga';
 import React, { Component } from 'react';
 import './PageSrc.css';
 import Slider from '../Layouts/Slider/Slider';
@@ -7,10 +8,23 @@ import elcomercio_logo from '../assets/images/comercio_logo.jpg';
 //import Footers from '../Layouts/Footers/Footers';
 //import Counter from '../Layouts/Counter/Counter';
 class PageSource extends Component {
+  constructor(){
+    super();
+        this.state = {
+      
+        }         
+        this.initializeReactGA = this.initializeReactGA.bind(this); 
+    }
 
 
+componentDidMount() {
+  this.initializeReactGA();
+}
 
-componentDidMount() {}
+initializeReactGA() {
+  ReactGA.initialize('UA-151341720-2');
+  ReactGA.pageview('/');
+ };
 
 /*TODO: Direccionar a los graficos respectivos*/
 render() {

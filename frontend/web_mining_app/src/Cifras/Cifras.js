@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactGA from 'react-ga';
 import {Button } from 'reactstrap';
 //import TextField from '@material-ui/core/TextField';
 import { Row, Col } from 'reactstrap';
@@ -16,14 +17,24 @@ class Cifras extends Component{
             date: new Date(), timepast:'',/*Cuanto tiempo a pasado en ms*/
         }
         this.click_handler = this.click_handler.bind(this);
+        this.initializeReactGA = this.initializeReactGA.bind(this); 
     }
 
+    initializeReactGA() {
+        ReactGA.initialize('UA-151341720-2');
+       };
+
     click_handler(){
+        ReactGA.event({
+            category: 'Click',
+            action: 'Subscripcion_desde_body',
+          });  
         document.getElementById("REGISTER").click();
       }
 
       componentDidMount() {
         this.timerID = setInterval(() => this.tick(),1000);
+        this.initializeReactGA();
       }
   
       componentWillUnmount() {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 import { Col,Row} from 'reactstrap';
 import Pablo from '../assets/images/team/pablo.jpeg';
 import Carlos from '../assets/images/team/carlos.jpeg';
@@ -19,10 +20,18 @@ class AboutUs extends Component {
             categoria_original:"",
             contenido:"",
             fuente_noticia:"",
-          }          
+          }         
+          this.initializeReactGA = this.initializeReactGA.bind(this); 
       }
 
-  componentDidMount() {}
+      componentDidMount() {
+        this.initializeReactGA();
+      }
+      
+      initializeReactGA() {
+        ReactGA.initialize('UA-151341720-2');
+        ReactGA.pageview('/aboutus');
+       };
   
   
   render() {
