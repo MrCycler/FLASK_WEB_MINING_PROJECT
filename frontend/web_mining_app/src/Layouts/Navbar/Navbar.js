@@ -41,7 +41,9 @@ class Navbar extends Component{
         this.toggle_suscripcion();
         ReactGA.event({
             category: 'Conversion',
-            action: 'Subscripcion_exitosa'
+            action: 'Subscripcion_exitosa',
+            label:'subscripcion',
+            value:100,
           });        
         this.props.log_handler(); 
         window.sessionStorage.setItem("auth", "active");

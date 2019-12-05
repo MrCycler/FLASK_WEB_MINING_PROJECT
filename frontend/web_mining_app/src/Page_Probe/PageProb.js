@@ -30,7 +30,9 @@ class PageProbe extends Component {
     click_handler(){
       ReactGA.event({
         category: 'Conversion',
-        action: 'Prueba_Algoritmo'
+        action: 'Prueba_Algoritmo',
+        label:'prueba',
+        value:300,
       });
       
       console.log(this.state.url)
