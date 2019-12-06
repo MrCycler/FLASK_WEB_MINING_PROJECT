@@ -98,10 +98,10 @@ class Cifras extends Component{
         let button = "";
         if(window.sessionStorage.getItem("auth")==='active')
         {
-            button = <a href="./prove"><Button className="know-button" size="md"  color="info">Conoce Nuestra metodología</Button></a>;
+            button = <a href="./prove"><Button className="know-button" size="md"  color="info">Prueba nuestro algoritmo</Button></a>;
         }
         else{
-            button = <Button   onClick={this.click_handler} className="know-button" size="md"  color="info">Conoce Nuestra metodología</Button>;
+            button = <Button   onClick={this.click_handler} className="know-button" size="md"  color="info">Prueba nuestro algoritmo</Button>;
         }
 
         return (
