@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import ReactGA from 'react-ga';
-import { Col,Row} from 'reactstrap';
+//import { Col,Row} from 'reactstrap';
 import Pablo from '../assets/images/team/pablo.jpeg';
 import Carlos from '../assets/images/team/carlos.jpeg';
 import Hilda from '../assets/images/team/Hilda.jpeg';
 import Jose from '../assets/images/team/jose.jpeg';
 import Juan from '../assets/images/team/juan.jpeg';
 
-import {Card, CardImg, CardText, CardBody, CardTitle} from 'reactstrap';
+//import {Card, CardImg, CardText, CardBody, CardTitle} from 'reactstrap';
 import './AboutUs.css';
 
 class AboutUs extends Component {

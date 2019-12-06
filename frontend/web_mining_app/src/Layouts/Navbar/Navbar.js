@@ -47,7 +47,7 @@ class Navbar extends Component{
           });        
         this.props.log_handler(); 
         window.sessionStorage.setItem("auth", "active");
-        
+        document.getElementById("PRUEBA").click(); 
     }
 
     out_subscription(){
@@ -56,7 +56,8 @@ class Navbar extends Component{
             action: 'Finalizo_Sesion'
           });  
         this.props.log_handler(); 
-        window.sessionStorage.setItem("auth", "deactive");    
+        window.sessionStorage.setItem("auth", "deactive");
+        document.getElementById("INICIO").click();     
     }
 
     in_subscription(){
@@ -81,7 +82,7 @@ class Navbar extends Component{
         let div1= "";
         if(window.sessionStorage.getItem("auth")==='active')
         {
-            li1 = <li><a href="/prove">Prueba</a></li>  
+            li1 = <li><a href="/prove">Prueba</a></li> ;
             div1 = <div id="SALIR" className="login_button" onClick={this.out_subscription}><p className="Register_text">Salir</p></div>;
            
         }
@@ -124,9 +125,9 @@ class Navbar extends Component{
                                         </div>
                                     <nav className="main_nav_contaner ml-auto">
                                         <ul className="main_nav">
-                                            <li><a href="/">Inicio</a></li>
-                                            <li><a href="/graficos">Visualización de Gráficos</a></li> 
-                                            <li><a href="/aboutus">Acerca de nosotros</a></li>  
+                                            <li><a href="/" id="INICIO">Inicio</a></li>
+                                            <li><a href="/graficos" id="GRAFICOS">Visualización de Gráficos</a></li> 
+                                            <li><a href="/aboutus" id="ABOUTUS">Acerca de nosotros</a></li>  
                                            {li1}
                                         </ul>
                                         
@@ -162,7 +163,7 @@ class Navbar extends Component{
                     </ModalBody>
                 </Modal>
 
-
+                <a id="PRUEBA" href="/prove" hidden>s</a>
             </header>
             
             

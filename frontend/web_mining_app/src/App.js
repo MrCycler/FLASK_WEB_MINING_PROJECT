@@ -51,20 +51,20 @@ class App extends Component {
     
     return (
       
-     
+      
         <div className="super_container">
-        <Navbar log_handler={this.changeisAuth}/>
+        <Navbar log_handler={this.changeisAuth} />
           <div className="wrapper-content">
           <Router>
-            <Switch>
             
+          <Switch>
                 <Route exact path="/" component={PageSrc}/>  
                 <Route path="/prove" component={PageProb}/>  
                 <Route path="/aboutus" component={AboutUs}/> 
                 <Route path="/graficos" component={PageGraphics}/> 
                 <Route  component={Page404}/>  
-                
-            </Switch> </Router> 
+              </Switch>  
+            </Router> 
     
           </div>
           <Footers></Footers>
