@@ -7,6 +7,8 @@ import {
   CarouselCaption
 } from 'reactstrap';
 
+import ReactGA from 'react-ga';
+
 import { Row} from 'reactstrap';
 import image1 from '../../assets/unicat/sliders/slide_01.png';
 import image2 from '../../assets/unicat/sliders/slide_02.png';
@@ -72,17 +74,29 @@ class Sliders extends Component {
     if (this.animating) return;
     const nextIndex = this.state.activeIndex === this.state.nslides - 1 ? 0 : this.state.activeIndex + 1;
     this.setState({ activeIndex: nextIndex });
+    ReactGA.event({
+      category: 'UI_INTERACTION',
+      action: 'SLIDER'
+    });
   }
 
   previous() {
     if (this.animating) return;
     const nextIndex = this.state.activeIndex === 0 ? this.state.nslides - 1 : this.state.activeIndex - 1;
     this.setState({ activeIndex: nextIndex });
+    ReactGA.event({
+      category: 'UI_INTERACTION',
+      action: 'SLIDER'
+    });
   }
 
   goToIndex(newIndex) {
     if (this.animating) return;
     this.setState({ activeIndex: newIndex });
+    ReactGA.event({
+      category: 'UI_INTERACTION',
+      action: 'SLIDER'
+    });
   }
 
   render() {

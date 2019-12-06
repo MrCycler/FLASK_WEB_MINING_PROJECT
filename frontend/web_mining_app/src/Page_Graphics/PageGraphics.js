@@ -56,8 +56,48 @@ export default function PageGraphics(props) {
 
   ReactGA.initialize('UA-151341720-2');
   ReactGA.pageview('/graficos');
+  ReactGA.event({
+    category: 'UI_INTERACTION',
+    action: 'GRAPHICS',
+    label: 'RPP'
+  });
 
   const handleChange = (event, newValue) => {
+    console.log(newValue, 'newValue')
+    ReactGA.event({
+      category: 'UI_INTERACTION',
+      action: 'GRAPHICS'
+    });
+    switch (newValue) {
+      case 0:
+          ReactGA.event({
+            category: 'UI_INTERACTION',
+            action: 'GRAPHICS',
+            label: 'RPP'
+          });
+          break;
+      case 1:
+          ReactGA.event({
+            category: 'UI_INTERACTION',
+            action: 'GRAPHICS',
+            label: 'PERU21'
+          });
+          break;
+      case 2:
+          ReactGA.event({
+            category: 'UI_INTERACTION',
+            action: 'GRAPHICS',
+            label: 'EL_COMERCIO'
+          });
+          break;
+      case 3:
+          ReactGA.event({
+            category: 'UI_INTERACTION',
+            action: 'GRAPHICS',
+            label: 'CONSOLIDADO'
+          });
+          break;
+    }
     setValue(newValue);
   };
 
