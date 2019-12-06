@@ -4,6 +4,9 @@ import RPP from '../assets/images/rpp_logo.png';
 import ElComercio from '../assets/images/comercio_logo.jpg';
 import Peru21 from '../assets/images/logo_peru21.svg';
 import './PageProb.css';
+import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 class PageProbe extends Component {
 
@@ -85,48 +88,84 @@ render() {
     imagen_periodico=<img src={Peru21} className="pageprob_origin_image" alt=""></img>
   }
     return (
-      <div className="content">
-        <div className="prove-header" >
+      <div className="Probe__content">
+        <div className="margin">
+          <div className="prove-header" >
 
-        </div>
-      <div className="page-header card">
-        <div className="row align-items-end">
-            <div className="col-lg-8">
-                <div className="page-header-title">
-                    <i className="feather icon-arrow-down bg-c-blue"></i>
-                    <div className="d-inline">
-                        <h4 className="title-prove">En esta sección usted podrá probar nuestro algoritmo</h4>
+          </div>
+          <div className="page-header card">
+            <div className="row align-items-end">
+                <div className="col-lg-8">
+                    <div className="page-header-title">
+                        <i className="feather icon-arrow-down bg-c-blue"></i>
+                        <div className="d-inline">
+                            <h4 className="title-prove">En esta sección usted podrá probar nuestro algoritmo</h4>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-      </div>
-      <div className="pcoded-inner-content">
-        <div className="main-body">
-          <div className="page-wrapper">
-            <div className="row">
-              <div className="col-md-12 col-xl-8">
-                <input className="pageprob_input" type="text" value={this.state.url} onChange={this.handleChange}></input>
-                <button className="pageprob_button" onClick={this.click_handler}>Probar</button>
-                <h6>Categoría original</h6>
-                <input className="pageprob_input" value={this.state.categoria_original} disabled></input>
-                <h6>Categoría predecida</h6>
-                <input className="pageprob_input" value={this.state.categoria} disabled></input>
-                <h6>Contenido de la noticia</h6>
-                <textarea className="pageprob_text_area" value={this.state.contenido} disabled></textarea>
+          </div>
+          <div className="Probe__card pcoded-inner-content">
+            <div className="main-body">
+              <div className="page-wrapper">
+                <div className="row">
+                  <div className="col-md-12 col-xl-8">
+                    <div className="Input__item Input__item--head">
+                      <TextField
+                        label="Ingresar URL"
+                        multiline
+                        value={this.state.url}
+                        onChange={this.handleChange}
+                        margin="normal"
+                        variant="outlined"
+                      />
+                      <Button variant="contained" color="primary" onClick={this.click_handler}>Probar</Button>
+                    </div>
+                    <br/>
+                    <div className="Input__item">
+                      <TextField
+                        label="Categoría Original"
+                        multiline
+                        value={this.state.categoria_original}
+                        disabled
+                        margin="normal"
+                        variant="outlined"
+                      />
+                    </div>
+                    <div className="Input__item">
+                      <TextField
+                        label="Categoría Predecida"
+                        multiline
+                        value={this.state.categoria}
+                        disabled
+                        margin="normal"
+                        variant="outlined"
+                      />
+                    </div>
+                    <div className="Input__item">
+                      <TextField
+                        label="Contenido de la noticia"
+                        multiline
+                        value={this.state.contenido}
+                        disabled
+                        rows="10"
+                        margin="normal"
+                        variant="outlined"
+                      />
+                    </div>
+                  </div>
+                  <div className="col-md-12 col-xl-2">
+                  <h6>Diario de origen</h6>
+                  {imagen_periodico}
+                    </div>
 
-              </div>
-              <div className="col-md-12 col-xl-2">
-              <h6>Diario de origen</h6>
-              {imagen_periodico}
+
                 </div>
-
-
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     );
   }
 }

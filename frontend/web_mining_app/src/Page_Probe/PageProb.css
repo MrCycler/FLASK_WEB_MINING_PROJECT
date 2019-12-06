@@ -27,3 +27,17 @@
 .title-prove{
     padding-top: 10px;
 }
+
+.Probe__content {
+    padding-bottom: 30px;
+}
+
+.Probe__card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.Input__item .MuiFormControl-root, .Input__item .MuiInputBase-root {
+    display: block;
+}
