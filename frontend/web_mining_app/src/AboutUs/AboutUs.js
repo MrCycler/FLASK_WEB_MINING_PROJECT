@@ -52,64 +52,55 @@ class AboutUs extends Component {
                         </div>
                     </div>
                 </div>
-        
-        <Row>
-        <Col xs="1">
-        </Col>
-
-        <Col xs="2">
-        <Card className="card-profile">
-        <CardImg top width="100%" src={Pablo} alt="Card image cap" height="180px" />
-            <CardBody>
-            <CardTitle className="title-card">Pablo Antunez de Mayolo</CardTitle>
-            <CardText>Ingeniero Electrónico (UNI). Ingeniero Supervisor de Mantenimiento en UCP Backus y Johnston SAA.</CardText>
-            </CardBody>
-         </Card>
-         </Col>
-
-        <Col xs="2">
-        <Card className="card-profile">
-        <CardImg top width="100%" src={Jose} alt="Card image cap" height="180px" />
-            <CardBody>
-            <CardTitle className="title-card">Jose Balbuena Galván</CardTitle>
-            <CardText>Ingeniero Mecatrónico (PUCP). Asistente de investigación en la Pontificia Universidad Católica del Perú.</CardText>
-            </CardBody>
-         </Card>
-         </Col>
-
-         <Col xs="2">
-         <Card className="card-profile">
-        <CardImg top width="100%" src={Juan} alt="Card image cap" height="180px" />
-            <CardBody>
-            <CardTitle className="title-card">Juan Mendoza Jacinto</CardTitle>
-            <CardText>Ingeniero Mecatrónico (PUCP). Full-stack Developer en PaperCube Solutions SAC.</CardText>
-            </CardBody>
-         </Card>
-         </Col>
-
-         <Col xs="2">
-         <Card className="card-profile">
-        <CardImg top width="100%" src={Carlos} alt="Card image cap" height="180px" />
-            <CardBody>
-            <CardTitle className="title-card">Carlos Roca Bejar</CardTitle>
-            <CardText>Ingeniero de Software (UNMSM). Software Developer en Belatrix Software.</CardText>
-            </CardBody>
-         </Card>
-         </Col>
-
-         <Col xs="2">
-         <Card className="card-profile">
-        <CardImg top width="100%" src={Hilda} alt="Card image cap" height="180px" />
-            <CardBody>
-            <CardTitle className="title-card">Hilda Samame Jimenez</CardTitle>
-            <CardText>Licenciada en computación cientifica (UNMSM). Software and Back-end Developer en Radical Solutions.</CardText>
-            </CardBody>
-         </Card>
-         </Col>
-
-         <Col xs="1">
-        </Col>
-        </Row>
+        <div className="margin">
+          <div className="Members">
+            <div className="Members__item">
+              <div class="card-profile card">
+                <div className="card-picture" style={{backgroundImage: "url("+Pablo+")"}}></div>
+                <div class="card-body">
+                  <div class="title-card card-title">Pablo Antunez de Mayolo</div>
+                  <p class="card-text">Ingeniero Electrónico (UNI). Ingeniero Supervisor de Mantenimiento en UCP Backus y Johnston SAA.</p>
+                </div>
+              </div>
+            </div>
+            <div className="Members__item">
+              <div class="card-profile card">
+              <div className="card-picture" style={{backgroundImage: "url("+Jose+")"}}></div>
+                <div class="card-body">
+                  <div class="title-card card-title">Jose Balbuena Galván</div>
+                  <p class="card-text">Ingeniero Mecatrónico (PUCP). Asistente de investigación en la Pontificia Universidad Católica del Perú.</p>
+                </div>
+              </div>
+            </div>
+            <div className="Members__item">
+              <div class="card-profile card">
+              <div className="card-picture" style={{backgroundImage: "url("+Juan+")"}}></div>
+                <div class="card-body">
+                  <div class="title-card card-title">Juan Mendoza Jacinto</div>
+                  <p class="card-text">Ingeniero Mecatrónico (PUCP). Full-stack Developer en PaperCube Solutions SAC.</p>
+                </div>
+              </div>
+            </div>
+            <div className="Members__item">
+              <div class="card-profile card">
+              <div className="card-picture" style={{backgroundImage: "url("+Carlos+")"}}></div>
+                <div class="card-body">
+                  <div class="title-card card-title">Carlos Roca Bejar</div>
+                  <p class="card-text">Ingeniero de Software (UNMSM). Software Developer en Belatrix Software.</p>
+                </div>
+              </div>
+            </div>
+            <div className="Members__item">
+              <div class="card-profile card">
+              <div className="card-picture" style={{backgroundImage: "url("+Hilda+")"}}></div>
+                <div class="card-body">
+                  <div class="title-card card-title">Hilda Samame Jimenez</div>
+                  <p class="card-text">Licenciada en computación cientifica (UNMSM). Software and Back-end Developer en Radical Solutions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
       );
