@@ -77,7 +77,7 @@ class AboutUs extends Component {
               <div className="card-picture" style={{backgroundImage: "url("+Juan+")"}}></div>
                 <div class="card-body">
                   <div class="title-card card-title">Juan Mendoza Jacinto</div>
-                  <p class="card-text">Ingeniero Mecatrónico (PUCP). Full-stack Developer en PaperCube Solutions SAC.</p>
+                  <p class="card-text">Ingeniero Mecatrónico (PUCP). Full-stack Developer en PaperCube Solutions SAC. Predocente en la Pontificia Universidad Católica del Perú.</p>
                 </div>
               </div>
             </div>
