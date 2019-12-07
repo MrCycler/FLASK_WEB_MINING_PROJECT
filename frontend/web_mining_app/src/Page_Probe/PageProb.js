@@ -110,50 +110,51 @@ render() {
               <div className="page-wrapper">
                 <div className="row">
                   <div className="col-md-12 col-xl-8">
-                    <div className="Input__item Input__item--head">
+                    <h6>Ingrese URL (dirección http) para probar el clasificador </h6>
+                      <div className="Input__item Input__item--head">
+                        <TextField
+                          label="https://elcomercio.pe/elecciones-2020/elecciones-2020-una-campana-que-no-despega-noticia/"
+                          multiline
+                          value={this.state.url}
+                          onChange={this.handleChange}
+                          margin="normal"
+                          variant="outlined"
+                        />
+                        <Button variant="contained" color="primary" onClick={this.click_handler}>Probar</Button>
+                      </div>
+                      <br/>
+                      <div className="Input__item">
                       <TextField
-                        label="Ingresar URL"
-                        multiline
-                        value={this.state.url}
-                        onChange={this.handleChange}
-                        margin="normal"
-                        variant="outlined"
-                      />
-                      <Button variant="contained" color="primary" onClick={this.click_handler}>Probar</Button>
-                    </div>
-                    <br/>
-                    <div className="Input__item">
-                      <TextField
-                        label="Categoría Original"
-                        multiline
-                        value={this.state.categoria_original}
-                        disabled
-                        margin="normal"
-                        variant="outlined"
-                      />
-                    </div>
-                    <div className="Input__item">
-                      <TextField
-                        label="Categoría Predecida"
-                        multiline
-                        value={this.state.categoria}
-                        disabled
-                        margin="normal"
-                        variant="outlined"
-                      />
-                    </div>
-                    <div className="Input__item">
-                      <TextField
-                        label="Contenido de la noticia"
-                        multiline
-                        value={this.state.contenido}
-                        disabled
-                        rows="10"
-                        margin="normal"
-                        variant="outlined"
-                      />
-                    </div>
-                  </div>
+                          label="Categoría Original"
+                          multiline
+                          value={this.state.categoria_original}
+                          disabled
+                          margin="normal"
+                          variant="outlined"
+                       />
+                      </div>
+                      <div className="Input__item">
+                        <TextField
+                          label="Categoría Predecida"
+                          multiline
+                          value={this.state.categoria}
+                          disabled
+                          margin="normal"
+                          variant="outlined"
+                       />
+                      </div>
+                      <div className="Input__item">
+                        <TextField
+                          label="Contenido de la noticia"
+                          multiline
+                          value={this.state.contenido}
+                          disabled
+                          rows="10"
+                          margin="normal"
+                          variant="outlined"
+                        />
+                     </div>
+                   </div>
                   <div className="col-md-12 col-xl-2">
                   <h6>Diario de origen</h6>
                   {imagen_periodico}
