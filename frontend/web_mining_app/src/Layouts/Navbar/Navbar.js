@@ -14,14 +14,18 @@ class Navbar extends Component{
         this.state = {
             logos : [],
             modal_suscripcion: false,
+            modal_comments: false,
 
         }
 
         this.toggle_suscripcion = this.toggle_suscripcion.bind(this);
+        this.toggle_comments = this.toggle_comments.bind(this);
         this.onclick_subcription = this.onclick_subcription.bind(this);
         this.out_subscription = this.out_subscription.bind(this);
         this.in_subscription = this.in_subscription.bind(this);
-        this.initializeReactGA = this.initializeReactGA.bind(this); 
+        this.initializeReactGA = this.initializeReactGA.bind(this);
+        this.handler_comments_send  = this.handler_comments_send.bind(this);
+        
     }
 
     initializeReactGA() {
@@ -57,7 +61,9 @@ class Navbar extends Component{
           });  
         this.props.log_handler(); 
         window.sessionStorage.setItem("auth", "deactive");
-        document.getElementById("INICIO").click();     
+        document.getElementById("INICIO").click();    
+        this.toggle_comments(); 
+        
     }
 
     in_subscription(){
@@ -74,7 +80,21 @@ class Navbar extends Component{
             modal_suscripcion: !prevState.modal_suscripcion}));
       }
 
-    
+    toggle_comments() {
+       
+        this.setState(prevState => ({
+            modal_comments: !prevState.modal_comments}));
+     }
+
+     handler_comments_send(){
+        ReactGA.event({
+            category: 'Conversion',
+            action: 'Comentario_enviado',
+            label:'comentarios',
+            value:300,
+          });  
+          this.out_subscription();
+     }
 
     render() {
 
@@ -83,7 +103,7 @@ class Navbar extends Component{
         if(window.sessionStorage.getItem("auth")==='active')
         {
             li1 = <li><a href="/prove">Prueba</a></li> ;
-            div1 = <div id="SALIR" className="login_button" onClick={this.out_subscription}><p className="Register_text">Salir</p></div>;
+            div1 = <div id="SALIR" className="login_button" onClick={this.toggle_comments}><p className="Register_text">Salir</p></div>;
            
         }
         else{
@@ -158,6 +178,28 @@ class Navbar extends Component{
                             </div>
                             
                             <Button variant="contained" color="primary" onClick={this.onclick_subcription}>Ingresar</Button>
+                            
+                        </div>
+                    </ModalBody>
+                </Modal>
+
+                
+
+                <Modal isOpen={this.state.modal_comments} toggle={this.out_subscription}>
+
+                    <ModalBody className="form_modal_body">
+                        <div className="ModalContainer">
+                            <div className="ModalContainer__title">
+                                <h2>Comentarios</h2>
+                                <p>Por favor dejenos sus comentarios y sugerencias de mejora.</p>
+                            </div>
+                            <div className="ModalContainer__form">
+                                <div className="Form__input">
+                                    <TextField multiline rows="4"
+                                    label="Comentarios" variant="outlined" />
+                                </div>
+                            </div>
+                            <Button variant="contained" color="primary" onClick={this.handler_comments_send}>Enviar</Button>
                             
                         </div>
                     </ModalBody>

@@ -20,7 +20,7 @@ function TabPanel(props) {
       aria-labelledby={`vertical-tab-${index}`}
       {...other}
     >
-      <Box p={3}>{children}</Box>
+      <Box p={4}>{children}</Box>
     </Typography>
   );
 }
@@ -97,6 +97,15 @@ export default function PageGraphics(props) {
             label: 'CONSOLIDADO'
           });
           break;
+      case 4:
+          ReactGA.event({
+              category: 'UI_INTERACTION',
+              action: 'GRAPHICS',
+              label: 'HISTORICO',
+            });
+      break;
+      default:
+        break;
     }
     setValue(newValue);
   };
@@ -118,6 +127,7 @@ export default function PageGraphics(props) {
               <Tab label="Peru21" {...a11yProps(1)} />
               <Tab label="El Comercio" {...a11yProps(2)} />
               <Tab label="Consolidado" {...a11yProps(3)} />
+              <Tab label="Historico" {...a11yProps(4)} />
             </Tabs>
             <TabPanel value={value} index={0}>
               <h2 className="Tab__title">Fuente: RPP</h2>
@@ -148,6 +158,12 @@ export default function PageGraphics(props) {
             <iframe width="100%" height="600"
             title="all-category"
             src="https://app.powerbi.com/view?r=eyJrIjoiYWMwYTFkZTUtOGZlMi00ZWQzLThhOTctYmQ1ZTkwZWExNGZlIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}"></iframe>
+            </TabPanel>
+            <TabPanel value={value} index={4}>
+            <h2 className="Tab__title">Historico</h2>
+            <iframe width="800" height="600" 
+            title="historical"
+            src="https://app.powerbi.com/view?r=eyJrIjoiNWI3ODdmYTktNDg4NS00M2VhLTg3ODQtZjRkOGRkMGYzMjBmIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
             </TabPanel>
           </div>
         </div>
