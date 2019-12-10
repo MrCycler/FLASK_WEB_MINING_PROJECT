@@ -41,3 +41,7 @@
 .Input__item .MuiFormControl-root, .Input__item .MuiInputBase-root {
     display: block;
 }
+
+.probe_question{
+    margin-top:20px;
+}

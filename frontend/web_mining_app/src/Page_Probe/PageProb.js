@@ -8,6 +8,13 @@ import './PageProb.css';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
+import FormControl from '@material-ui/core/FormControl';
+//import FormLabel from '@material-ui/core/FormLabel';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Radio from '@material-ui/core/Radio';
+//import StyledRadio from '@material-ui/core/StyledRadio';
+
 class PageProbe extends Component {
 
   constructor(){
@@ -78,14 +85,39 @@ initializeReactGA() {
 render() {
 
   let imagen_periodico =<p></p>;
+  let form = <p></p>;
   if(this.state.fuente_noticia==="Fuente: El Comercio"){
-    imagen_periodico=<img src={ElComercio} className="pageprob_origin_image" alt=""></img>
+    imagen_periodico=<img src={ElComercio} className="pageprob_origin_image" alt=""></img>;
+    form = <div className="probe_question"><h6>¿La predición de nuestro modelo fue correcta?</h6>
+  <FormControl component="fieldset">
+  <RadioGroup defaultValue="correcto" aria-label="veredicto" name="customized-radios">
+    <FormControlLabel value="correcto"  label="Si" control={<Radio />}/>
+    <FormControlLabel value="incorrecto"  label="No" control={<Radio />} />
+  </RadioGroup>
+</FormControl>
+</div>;
   }
   if(this.state.fuente_noticia==="Fuente: RPP Noticias"){
     imagen_periodico=<img src={RPP} className="pageprob_origin_image" alt=""></img>
+    form = <div className="probe_question"><h6>¿La predición de nuestro modelo fue correcta?</h6>
+  <FormControl component="fieldset">
+  <RadioGroup defaultValue="correcto" aria-label="veredicto" name="customized-radios">
+    <FormControlLabel value="correcto"  label="Si" control={<Radio />}/>
+    <FormControlLabel value="incorrecto"  label="No" control={<Radio />} />
+  </RadioGroup>
+</FormControl>
+</div>;
   }
   if(this.state.fuente_noticia==="Fuente: Peru 21"){
     imagen_periodico=<img src={Peru21} className="pageprob_origin_image" alt=""></img>
+    form = <div className="probe_question"><h6>¿La predicción de nuestro modelo fue correcta?</h6>
+  <FormControl component="fieldset">
+  <RadioGroup defaultValue="correcto" aria-label="veredicto" name="customized-radios">
+    <FormControlLabel value="correcto"  label="Si" control={<Radio color="primary" />}/>
+    <FormControlLabel value="incorrecto"  label="No" control={<Radio color="primary" />} />
+  </RadioGroup>
+</FormControl>
+</div>;
   }
     return (
       <div className="Probe__content">
@@ -156,9 +188,11 @@ render() {
                         />
                      </div>
                    </div>
-                  <div className="col-md-12 col-xl-2">
+                  <div className="col-md-12 col-xl-4">
                   <h6>Diario de origen</h6>
                   {imagen_periodico}
+                  {form}
+                
                     </div>
 
 
