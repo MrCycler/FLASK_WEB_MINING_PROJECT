@@ -55,8 +55,8 @@ class PageProbe extends Component {
         fetch(cors_url+api_url, obj_query).then((res) => {return res.json();})
         .then((data) => {
           this.setState({
-            categoria_original: data.data.categoria_periodico,
-            categoria: data.data.tipo_noticia,
+            categoria_original: data.data.categoria_periodico.replace('Categoria segun el periodico','Categoría según el períodico'),
+            categoria: data.data.tipo_noticia.replace('Categoria predecida','Categoría predecida'),
             contenido: data.data.contenido,
             fuente_noticia: data.data.fuente_noticia,  
           });
@@ -113,7 +113,8 @@ render() {
                     <h6>Ingrese URL (dirección http) para probar el clasificador </h6>
                       <div className="Input__item Input__item--head">
                         <TextField
-                          label="https://elcomercio.pe/elecciones-2020/elecciones-2020-una-campana-que-no-despega-noticia/"
+                          label="Ingrese URL"
+                          placeholder="https://elcomercio.pe/elecciones-2020/elecciones-2020-una-campana-que-no-despega-noticia/"
                           multiline
                           value={this.state.url}
                           onChange={this.handleChange}

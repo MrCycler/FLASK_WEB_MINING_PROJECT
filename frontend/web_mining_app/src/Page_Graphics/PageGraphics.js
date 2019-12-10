@@ -20,7 +20,7 @@ function TabPanel(props) {
       aria-labelledby={`vertical-tab-${index}`}
       {...other}
     >
-      <Box p={4}>{children}</Box>
+      <Box p={3}>{children}</Box>
     </Typography>
   );
 }
@@ -117,7 +117,7 @@ export default function PageGraphics(props) {
           <div className={classes.root}>
             <Tabs
               orientation="vertical"
-              variant="scrollable"
+              variant="fullWidth"
               value={value}
               onChange={handleChange}
               aria-label="Vertical tabs example"
