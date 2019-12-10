@@ -98,10 +98,10 @@ class Cifras extends Component{
         let button = "";
         if(window.sessionStorage.getItem("auth")==='active')
         {
-            button = <a href="./prove"><Button className="know-button" size="md"  color="info">Prueba nuestro algoritmo</Button></a>;
+            button = <a href="./prove"><Button className="know-button" size="md"  color="info">Pruebe nuestro algoritmo</Button></a>;
         }
         else{
-            button = <Button   onClick={this.click_handler} className="know-button" size="md"  color="info">Prueba nuestro algoritmo</Button>;
+            button = <Button   onClick={this.click_handler} className="know-button" size="md"  color="info">Pruebe nuestro algoritmo</Button>;
         }
 
         return (
@@ -110,7 +110,7 @@ class Cifras extends Component{
                     <div className="row">
                         <div className="col">
                             <div className="text-center">
-                                <h2 className="section_title title-cifras">Nuestro análisis esta basado en cifras</h2>
+                                <h2 className="section_title title-cifras">Nuestro análisis está basado en cifras</h2>
                                 <Row>
                                     <Col xs="3">
                                     <p className="cifra">{this.state.cifra1}</p>

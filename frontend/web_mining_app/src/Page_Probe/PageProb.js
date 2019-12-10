@@ -91,7 +91,7 @@ render() {
     form = <div className="probe_question"><h6>¿La predición de nuestro modelo fue correcta?</h6>
   <FormControl component="fieldset">
   <RadioGroup defaultValue="correcto" aria-label="veredicto" name="customized-radios">
-    <FormControlLabel value="correcto"  label="Si" control={<Radio />}/>
+    <FormControlLabel value="correcto"  label="Sí" control={<Radio />}/>
     <FormControlLabel value="incorrecto"  label="No" control={<Radio />} />
   </RadioGroup>
 </FormControl>
@@ -127,11 +127,11 @@ render() {
           </div>
           <div className="page-header card">
             <div className="row align-items-end">
-                <div className="col-lg-8">
+                <div className="col-lg-12">
                     <div className="page-header-title">
                         <i className="feather icon-arrow-down bg-c-blue"></i>
                         <div className="d-inline">
-                            <h4 className="title-prove">En esta sección usted podrá probar nuestro algoritmo</h4>
+                            <h4 className="title-prove">En esta sección, podrá probar el algoritmo. Primero ingrese una URL de alguna noticia de su interés de las siguientes fuentes: El Comercio, Perú21 y RPP.</h4>
                         </div>
                     </div>
                 </div>
@@ -142,7 +142,7 @@ render() {
               <div className="page-wrapper">
                 <div className="row">
                   <div className="col-md-12 col-xl-8">
-                    <h6>Ingrese URL (dirección http) para probar el clasificador </h6>
+                    <h6>Ingrese la URL (dirección HTTP) para probar el desempeño del clasificador.</h6>
                       <div className="Input__item Input__item--head">
                         <TextField
                           label="Ingrese URL"

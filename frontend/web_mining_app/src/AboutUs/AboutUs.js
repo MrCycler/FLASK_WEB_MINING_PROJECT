@@ -45,7 +45,7 @@ class AboutUs extends Component {
                             <div className=" text-center">
                                 <h2 className="section_title">Nuestro equipo</h2>
                                 <div className="section_subtitle">
-                                    <p>Nuestro equipo de desarrollo esta formado por los siguientes miembros, todos parte de la maestría de informática con mención en ciencias de la computación de la (PUCP) Pontificia Universidad Católica del Perú.</p>
+                                    <h4>Nuestro equipo de desarrollo está formado por los siguientes miembros, todos parte de la Maestría en Informática con mención en Ciencias de la Computación de la (PUCP) Pontificia Universidad Católica del Perú.</h4>
                                     
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ class AboutUs extends Component {
               <div className="card-picture" style={{backgroundImage: "url("+Juan+")"}}></div>
                 <div class="card-body">
                   <div class="title-card card-title">Juan Mendoza Jacinto</div>
-                  <p class="card-text">Ingeniero Mecatrónico (PUCP). Full-stack Developer en PaperCube Solutions SAC. Predocente en la Pontificia Universidad Católica del Perú.</p>
+                  <p class="card-text">Ingeniero Mecatrónico (PUCP). Full-stack Developer en PaperCube Solutions SAC. Predocente en la PUCP.</p>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@ class AboutUs extends Component {
               <div className="card-picture" style={{backgroundImage: "url("+Carlos+")"}}></div>
                 <div class="card-body">
                   <div class="title-card card-title">Carlos Roca Bejar</div>
-                  <p class="card-text">Ingeniero de Software (UNMSM). Software Developer en Belatrix Software.</p>
+                  <p class="card-text">Ingeniero de Software (UNMSM). Software y Backend Developer en Belatrix Software.</p>
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@ class AboutUs extends Component {
               <div className="card-picture" style={{backgroundImage: "url("+Hilda+")"}}></div>
                 <div class="card-body">
                   <div class="title-card card-title">Hilda Samame Jimenez</div>
-                  <p class="card-text">Licenciada en computación cientifica (UNMSM). Software and Back-end Developer en Radical Solutions.</p>
+                  <p class="card-text">Licenciada en Computación Cientifica (UNMSM). Software Developer en Radical Solutions.</p>
                 </div>
               </div>
             </div>

@@ -40,7 +40,8 @@ render() {
           <div class="col">
           <div class="section_title_container text-center">
           <h2 class="section_title">Fuentes de Noticias</h2>
-          <div class="section_subtitle"><p>Para el análisis de tendencias extraimos un conjunto de noticias de las siguientes fuentes.</p></div>
+          <br></br>
+          <h4>Para el análisis de tendencias, se realizó la extracción de un conjunto de noticias de las siguientes fuentes.</h4>
           </div>
           </div>
           </div>

@@ -52,7 +52,7 @@ class Footers extends Component {
             </a>
             </div>
             <div class="footer_about_text">
-            <p>TPM Analytics (Tendencias de Publicación de Medios) es un proyecto académico realizado por estudiantes de la maestría de Informática y ciencias de la computación de la Pontificia Universidad Cátolica del Perú.</p>
+            <p>TPM Analytics (Tendencias de Publicación de Medios) es un proyecto académico realizado por estudiantes de la Maestría en Informática con mención en Ciencias de la Computación de la Pontificia Universidad Cátolica del Perú.</p>
             </div>
             
             </div>
@@ -60,11 +60,11 @@ class Footers extends Component {
             <div class="col-lg-4 footer_col">
 
             <div class="footer_section footer_contact">
-            <div class="footer_title">Contactanos:</div>
+            <div class="footer_title">Contáctenos:</div>
             <div class="footer_contact_info">
             <ul>
               <li>Email: mendoza.jm@pucp.pe</li>
-              <li>Telefono: +(51) 978635693</li>
+              <li>Teléfono: +(51) 978635693</li>
               <li>Av. Universitaria 1801, San Miguel, Lima – Perú</li>
             </ul>
             </div>
@@ -95,7 +95,7 @@ class Footers extends Component {
             <div class="col">
             <div class="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start">
             <div class="cr_text">
-            Copyright ©2019 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="blank">Colorlib</a>
+            Copyright ©2019 All rights reserved | PUCP
             </div>
             <div class="ml-lg-auto cr_links">
             <ul class="cr_list">
