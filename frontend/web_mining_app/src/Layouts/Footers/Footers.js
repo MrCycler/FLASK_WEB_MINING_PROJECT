@@ -36,32 +36,32 @@ class Footers extends Component {
 
       return (
         <footer>
-          <footer class="footer">
-            <div class="footer_background"></div>
-            <div class="container">
-            <div class="row footer_row">
-            <div class="col">
-            <div class="footer_content">
-            <div class="row">
-            <div class="col-lg-4 footer_col">
+          <footer className="footer">
+            <div className="footer_background"></div>
+            <div className="container">
+            <div className="row footer_row">
+            <div className="col">
+            <div className="footer_content">
+            <div className="row">
+            <div className="col-lg-4 footer_col">
 
-            <div class="footer_section footer_about">
-            <div class="footer_logo_container">
+            <div className="footer_section footer_about">
+            <div className="footer_logo_container">
             <a href="./">
-            <div class="footer_logo_text">TPM <span>Analytics</span></div>
+            <div className="footer_logo_text">TPM <span>Analytics</span></div>
             </a>
             </div>
-            <div class="footer_about_text">
+            <div className="footer_about_text">
             <p>TPM Analytics (Tendencias de Publicación de Medios) es un proyecto académico realizado por estudiantes de la maestría de Informática y ciencias de la computación de la Pontificia Universidad Cátolica del Perú.</p>
             </div>
             
             </div>
             </div>
-            <div class="col-lg-4 footer_col">
+            <div className="col-lg-4 footer_col">
 
-            <div class="footer_section footer_contact">
-            <div class="footer_title">Contactanos:</div>
-            <div class="footer_contact_info">
+            <div className="footer_section footer_contact">
+            <div className="footer_title">Contactanos:</div>
+            <div className="footer_contact_info">
             <ul>
               <li>Email: mendoza.jm@pucp.pe</li>
               <li>Telefono: +(51) 978635693</li>
@@ -70,11 +70,11 @@ class Footers extends Component {
             </div>
             </div>
             </div>
-            <div class="col-lg-4 footer_col">
+            <div className="col-lg-4 footer_col">
 
-            <div class="footer_section footer_links">
-            <div class="footer_title">Le puede interesar:</div>
-            <div class="footer_links_container">
+            <div className="footer_section footer_links">
+            <div className="footer_title">Le puede interesar:</div>
+            <div className="footer_links_container">
             <ul>
               <li><a href="./">Inicio</a></li>
               <li><a href="./graficos">Gráficos</a></li>
@@ -91,14 +91,14 @@ class Footers extends Component {
             </div>
             </div>
             </div>
-            <div class="row copyright_row">
-            <div class="col">
-            <div class="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start">
-            <div class="cr_text">
-            Copyright ©2019 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="blank">Colorlib</a>
+            <div className="row copyright_row">
+            <div className="col">
+            <div className="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start">
+            <div className="cr_text">
+            Copyright ©2019 All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="blank">Colorlib</a>
             </div>
-            <div class="ml-lg-auto cr_links">
-            <ul class="cr_list">
+            <div className="ml-lg-auto cr_links">
+            <ul className="cr_list">
             
             </ul>
             </div>

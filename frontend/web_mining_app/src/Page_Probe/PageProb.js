@@ -113,8 +113,9 @@ render() {
                     <h6>Ingrese URL (dirección http) para probar el clasificador </h6>
                       <div className="Input__item Input__item--head">
                         <TextField
-                          label="https://elcomercio.pe/elecciones-2020/elecciones-2020-una-campana-que-no-despega-noticia/"
+                          label="Ingresar URL"
                           multiline
+                          placeholder="https://elcomercio.pe/elecciones-2020/elecciones-2020-una-campana-que-no-despega-noticia/"
                           value={this.state.url}
                           onChange={this.handleChange}
                           margin="normal"

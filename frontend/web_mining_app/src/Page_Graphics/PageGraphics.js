@@ -63,11 +63,11 @@ export default function PageGraphics(props) {
   });
 
   const handleChange = (event, newValue) => {
-    console.log(newValue, 'newValue')
     ReactGA.event({
       category: 'UI_INTERACTION',
       action: 'GRAPHICS'
     });
+    ReactGA.set({ 'clicks_per_tabs': 1 });
     switch (newValue) {
       case 0:
           ReactGA.event({
@@ -163,7 +163,7 @@ export default function PageGraphics(props) {
             <h2 className="Tab__title">Historico</h2>
             <iframe width="800" height="600" 
             title="historical"
-            src="https://app.powerbi.com/view?r=eyJrIjoiNWI3ODdmYTktNDg4NS00M2VhLTg3ODQtZjRkOGRkMGYzMjBmIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+            src="https://app.powerbi.com/view?r=eyJrIjoiNWI3ODdmYTktNDg4NS00M2VhLTg3ODQtZjRkOGRkMGYzMjBmIiwidCI6IjAyZDUxZmEyLWM5MDEtNDc0Yy1iOGUxLTYwMzQ2OTVjYTEyNiIsImMiOjR9" frameBorder="0" allowFullScreen="{true}"></iframe>
             </TabPanel>
           </div>
         </div>
