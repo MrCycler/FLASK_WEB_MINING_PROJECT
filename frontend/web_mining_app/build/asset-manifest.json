@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.11a6d4d6.chunk.css",
-    "main.js": "/static/js/main.49515e83.chunk.js",
-    "main.js.map": "/static/js/main.49515e83.chunk.js.map",
+    "main.css": "/static/css/main.c4e47694.chunk.css",
+    "main.js": "/static/js/main.169223a2.chunk.js",
+    "main.js.map": "/static/js/main.169223a2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1b4c5ebd.js",
     "runtime-main.js.map": "/static/js/runtime-main.1b4c5ebd.js.map",
-    "static/js/2.b2bbafba.chunk.js": "/static/js/2.b2bbafba.chunk.js",
-    "static/js/2.b2bbafba.chunk.js.map": "/static/js/2.b2bbafba.chunk.js.map",
+    "static/js/2.67d115dc.chunk.js": "/static/js/2.67d115dc.chunk.js",
+    "static/js/2.67d115dc.chunk.js.map": "/static/js/2.67d115dc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c9b9b8f0b48f2feb1621b209d5be9281.js": "/precache-manifest.c9b9b8f0b48f2feb1621b209d5be9281.js",
+    "precache-manifest.b8928656f74408da0cb394b5af2238c9.js": "/precache-manifest.b8928656f74408da0cb394b5af2238c9.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.11a6d4d6.chunk.css.map": "/static/css/main.11a6d4d6.chunk.css.map",
+    "static/css/main.c4e47694.chunk.css.map": "/static/css/main.c4e47694.chunk.css.map",
     "static/media/Hilda.jpeg": "/static/media/Hilda.0903505a.jpeg",
     "static/media/breaking_news.jpg": "/static/media/breaking_news.03af7dcc.jpg",
     "static/media/carlos.jpeg": "/static/media/carlos.e9665277.jpeg",
     "static/media/colaborative.png": "/static/media/colaborative.243e4a43.png",
     "static/media/comercio_logo.jpg": "/static/media/comercio_logo.40383d19.jpg",
     "static/media/font-awesome.min.css": "/static/media/fontawesome-webfontd41d.674f50d2.eot",
-    "static/media/logo_peru21.svg": "/static/media/logo_peru21.9cb48a8b.svg",
+    "static/media/logo_peru21.svg": "/static/media/logo_peru21.6d1ac79e.svg",
     "static/media/logomaestria2.jpg": "/static/media/logomaestria2.5135ee06.jpg",
     "static/media/pablo.jpeg": "/static/media/pablo.ea78cbcb.jpeg",
     "static/media/slide_01.png": "/static/media/slide_01.2526a09a.png",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1b4c5ebd.js",
-    "static/js/2.b2bbafba.chunk.js",
-    "static/css/main.11a6d4d6.chunk.css",
-    "static/js/main.49515e83.chunk.js"
+    "static/js/2.67d115dc.chunk.js",
+    "static/css/main.c4e47694.chunk.css",
+    "static/js/main.169223a2.chunk.js"
   ]
 }
