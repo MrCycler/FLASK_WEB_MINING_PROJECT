@@ -118,10 +118,18 @@ class Sliders extends Component {
 
 
     return (
-      <div>
+    <div  class="divslider">
+      <div class="inside">
         <style>
           {
-            `.custom-tag {
+            `
+            .divslider{
+              padding-left:150px;
+              padding-right:150px;
+              text-align:center;
+              max-width: 100%;
+            }
+            .custom-tag {
                 max-width: 100%;
                 height: 480px;
                 background: black;
@@ -148,6 +156,7 @@ class Sliders extends Component {
           <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
         </Carousel>
       </div>
+    </div>
     );
   }
 }

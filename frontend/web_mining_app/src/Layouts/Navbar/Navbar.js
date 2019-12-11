@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactGA from 'react-ga';
-import Logo from '../../assets/unicat/images/logomaestria.jpg';
+import Logo from '../../assets/unicat/images/logomaestria2.jpg';
 //import {Row,Col,Container} from 'reactstrap';
 import {Button, Modal,  ModalBody } from 'reactstrap';
 import TextField from '@material-ui/core/TextField';
@@ -108,7 +108,7 @@ class Navbar extends Component{
         }
         else{
             
-            div1 = <div id="REGISTER" className="login_button" onClick={this.in_subscription}><p className="Register_text">Registrese</p></div>;
+            div1 = <div id="REGISTER" className="login_button" onClick={this.in_subscription}><p className="Register_text">Identifíquese</p></div>;
         }
 
         return (
@@ -166,7 +166,7 @@ class Navbar extends Component{
                         <div className="ModalContainer">
                             <div className="ModalContainer__title">
                                 <h2>Suscripción</h2>
-                                <p>Si deseas acceder a mayor información dejanos tu correo electrónico.</p>
+                                <p>Si desea acceder al algoritmo de prueba, por favor déjenos su nombre y correo electrónico.</p>
                             </div>
                             <div className="ModalContainer__form">
                                 <div className="Form__input">
@@ -191,7 +191,7 @@ class Navbar extends Component{
                         <div className="ModalContainer">
                             <div className="ModalContainer__title">
                                 <h2>Comentarios</h2>
-                                <p>Por favor dejenos sus comentarios y sugerencias de mejora.</p>
+                                <p>Agradeceríamos sus comentarios y sugerencias de mejora.</p>
                             </div>
                             <div className="ModalContainer__form">
                                 <div className="Form__input">

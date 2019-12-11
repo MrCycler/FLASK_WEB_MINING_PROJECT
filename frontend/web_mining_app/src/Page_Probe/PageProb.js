@@ -8,6 +8,13 @@ import './PageProb.css';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
+import FormControl from '@material-ui/core/FormControl';
+//import FormLabel from '@material-ui/core/FormLabel';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Radio from '@material-ui/core/Radio';
+//import StyledRadio from '@material-ui/core/StyledRadio';
+
 class PageProbe extends Component {
 
   constructor(){
@@ -55,8 +62,8 @@ class PageProbe extends Component {
         fetch(cors_url+api_url, obj_query).then((res) => {return res.json();})
         .then((data) => {
           this.setState({
-            categoria_original: data.data.categoria_periodico,
-            categoria: data.data.tipo_noticia,
+            categoria_original: data.data.categoria_periodico.replace('Categoria segun el periodico','Categoría según el períodico'),
+            categoria: data.data.tipo_noticia.replace('Categoria predecida','Categoría predecida'),
             contenido: data.data.contenido,
             fuente_noticia: data.data.fuente_noticia,  
           });
@@ -78,14 +85,39 @@ initializeReactGA() {
 render() {
 
   let imagen_periodico =<p></p>;
+  let form = <p></p>;
   if(this.state.fuente_noticia==="Fuente: El Comercio"){
-    imagen_periodico=<img src={ElComercio} className="pageprob_origin_image" alt=""></img>
+    imagen_periodico=<img src={ElComercio} className="pageprob_origin_image" alt=""></img>;
+    form = <div className="probe_question"><h6>¿La predición de nuestro modelo fue correcta?</h6>
+  <FormControl component="fieldset">
+  <RadioGroup defaultValue="correcto" aria-label="veredicto" name="customized-radios">
+    <FormControlLabel value="correcto"  label="Sí" control={<Radio />}/>
+    <FormControlLabel value="incorrecto"  label="No" control={<Radio />} />
+  </RadioGroup>
+</FormControl>
+</div>;
   }
   if(this.state.fuente_noticia==="Fuente: RPP Noticias"){
     imagen_periodico=<img src={RPP} className="pageprob_origin_image" alt=""></img>
+    form = <div className="probe_question"><h6>¿La predición de nuestro modelo fue correcta?</h6>
+  <FormControl component="fieldset">
+  <RadioGroup defaultValue="correcto" aria-label="veredicto" name="customized-radios">
+    <FormControlLabel value="correcto"  label="Si" control={<Radio />}/>
+    <FormControlLabel value="incorrecto"  label="No" control={<Radio />} />
+  </RadioGroup>
+</FormControl>
+</div>;
   }
   if(this.state.fuente_noticia==="Fuente: Peru 21"){
     imagen_periodico=<img src={Peru21} className="pageprob_origin_image" alt=""></img>
+    form = <div className="probe_question"><h6>¿La predicción de nuestro modelo fue correcta?</h6>
+  <FormControl component="fieldset">
+  <RadioGroup defaultValue="correcto" aria-label="veredicto" name="customized-radios">
+    <FormControlLabel value="correcto"  label="Si" control={<Radio color="primary" />}/>
+    <FormControlLabel value="incorrecto"  label="No" control={<Radio color="primary" />} />
+  </RadioGroup>
+</FormControl>
+</div>;
   }
     return (
       <div className="Probe__content">
@@ -95,11 +127,11 @@ render() {
           </div>
           <div className="page-header card">
             <div className="row align-items-end">
-                <div className="col-lg-8">
+                <div className="col-lg-12">
                     <div className="page-header-title">
                         <i className="feather icon-arrow-down bg-c-blue"></i>
                         <div className="d-inline">
-                            <h4 className="title-prove">En esta sección usted podrá probar nuestro algoritmo</h4>
+                            <h4 className="title-prove">En esta sección, podrá probar el algoritmo. Primero ingrese una URL de alguna noticia de su interés de las siguientes fuentes: El Comercio, Perú21 y RPP.</h4>
                         </div>
                     </div>
                 </div>
@@ -110,10 +142,10 @@ render() {
               <div className="page-wrapper">
                 <div className="row">
                   <div className="col-md-12 col-xl-8">
-                    <h6>Ingrese URL (dirección http) para probar el clasificador </h6>
+                    <h6>Ingrese la URL (dirección HTTP) para probar el desempeño del clasificador.</h6>
                       <div className="Input__item Input__item--head">
                         <TextField
-                          label="Ingresar URL"
+                          label="Ingrese URL"
                           multiline
                           placeholder="https://elcomercio.pe/elecciones-2020/elecciones-2020-una-campana-que-no-despega-noticia/"
                           value={this.state.url}
@@ -156,9 +188,11 @@ render() {
                         />
                      </div>
                    </div>
-                  <div className="col-md-12 col-xl-2">
+                  <div className="col-md-12 col-xl-4">
                   <h6>Diario de origen</h6>
                   {imagen_periodico}
+                  {form}
+                
                     </div>
 
 

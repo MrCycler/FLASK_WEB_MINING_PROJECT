@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "df698f821c43759928bb79835adcdfc7",
+    "revision": "26974625b707bc63f95a3d5e82cd191b",
     "url": "/index.html"
   },
   {
-    "revision": "68f9bf6cc6ba3d27b975",
-    "url": "/static/css/main.dad94f76.chunk.css"
+    "revision": "fbc2aa98e0e9d5ff98f7",
+    "url": "/static/css/main.11a6d4d6.chunk.css"
   },
   {
-    "revision": "d9616ae17b7d7a737d9d",
-    "url": "/static/js/2.a9e768bb.chunk.js"
+    "revision": "94a644c78a9da63b2884",
+    "url": "/static/js/2.b2bbafba.chunk.js"
   },
   {
-    "revision": "68f9bf6cc6ba3d27b975",
-    "url": "/static/js/main.0355f01c.chunk.js"
+    "revision": "fbc2aa98e0e9d5ff98f7",
+    "url": "/static/js/main.49515e83.chunk.js"
   },
   {
     "revision": "d7e5e852c3ead21ca2b4",
@@ -68,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/logo_peru21.9cb48a8b.svg"
   },
   {
-    "revision": "34072d33237fef9344e14576ccbab1e0",
-    "url": "/static/media/logomaestria.34072d33.jpg"
+    "revision": "5135ee0633113649548e6d084f951d36",
+    "url": "/static/media/logomaestria2.5135ee06.jpg"
   },
   {
     "revision": "ea78cbcb0f2334f52d7e30cd1299905e",

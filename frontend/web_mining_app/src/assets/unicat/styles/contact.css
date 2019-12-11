@@ -28,7 +28,7 @@
 1. Fonts
 ***********/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto:300,400,500,700,900');
 
 /*********************************
 2. Body and some general stuff
@@ -126,7 +126,7 @@ h4{font-size: 18px;}
 h5{font-size: 14px;}
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	font-weight: 700;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -289,7 +289,7 @@ section
 }
 .question
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	font-size: 14px;
 	color: #FFFFFF;
 	margin-left: 0px;
@@ -377,7 +377,7 @@ section
 }
 .logo_text
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 0.75;
@@ -853,7 +853,7 @@ section
 }
 .contact_info_title
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	font-size: 36px;
 	font-weight: 700;
 	color: #384158;
@@ -932,7 +932,7 @@ section
 }
 .contact_info_location_title
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	font-size: 18px;
 	font-weight: 700;
 	color: #384158;
@@ -977,7 +977,7 @@ section
 }
 .newsletter_title
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1088,7 +1088,7 @@ section
 }
 .footer_logo_text
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 0.75;
@@ -1105,7 +1105,7 @@ section
 }
 .footer_title
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Roboto', serif;
 	font-size: 18px;
 	font-weight: 700;
 	color: #FFFFFF;
