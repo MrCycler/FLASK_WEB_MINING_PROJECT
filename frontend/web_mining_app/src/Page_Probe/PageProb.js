@@ -2,7 +2,7 @@ import ReactGA from 'react-ga';
 import React, { Component } from 'react';
 import RPP from '../assets/images/rpp_logo.png';
 import ElComercio from '../assets/images/comercio_logo.jpg';
-import Peru21 from '../assets/images/logo_peru21.svg';
+import Peru21 from '../assets/images/logo_peru_21.jpg';
 import './PageProb.css';
 //import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
@@ -94,6 +94,8 @@ render() {
     <FormControlLabel value="correcto"  label="Sí" control={<Radio />}/>
     <FormControlLabel value="incorrecto"  label="No" control={<Radio />} />
   </RadioGroup>
+  <div className="probe_button">
+  <Button  variant="contained" color="primary">Enviar</Button></div>
 </FormControl>
 </div>;
   }
@@ -106,6 +108,8 @@ render() {
     <FormControlLabel value="incorrecto"  label="No" control={<Radio />} />
   </RadioGroup>
 </FormControl>
+<div className="probe_button">
+  <Button  variant="contained" color="primary">Enviar</Button></div>
 </div>;
   }
   if(this.state.fuente_noticia==="Fuente: Peru 21"){
@@ -117,6 +121,8 @@ render() {
     <FormControlLabel value="incorrecto"  label="No" control={<Radio color="primary" />} />
   </RadioGroup>
 </FormControl>
+<div className="probe_button">
+  <Button  variant="contained" color="primary">Enviar</Button></div>
 </div>;
   }
     return (
